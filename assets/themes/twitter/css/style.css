@@ -1,71 +1,151 @@
-/* Override some defaults */
-html, body {
-  background-color: #eee;
+html,
+body {
+  background-color: #fdfdfd;
+  }
+
+body {
+  
 }
-.navbar {
+
+h1 small {letter-spacing: 0}
+
+.brand {
+  font-weight: 600;
+}
+
+body p{ 
+  font-family: Cambria, Georgia, "Times New Roman", Times, Sans-Serif; 
+  line-height: 1.5em; font-size: 1.2em;
+  margin:0;
+  }
+
+body p+p {
+  text-indent: 2em
+  }
+
+
+
+
+section,
+article {
+  margin-top: 10%;
+  }
+
+section {font-family: Cambria, Georgia, "Times New Roman", Times, Sans-Serif; }
+section h1,h2,h3,h4,h5,h6 {font-family: Helvetica, "Helvetica Neue", Arial; Sans}
+
+
+article ul,ol {
+  font-family: Cambria, Georgia, "Times New Roman", Times, Sans-Serif; 
+  font-size: 1.2em;
+  padding-left: 1em;
+  }
+
+article p{
+  -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+
+li p {
+  font-size: 1em
+}
+
+.hentry {
+  width:100%;
+}
+
+
+.entry-title {
+  display: block; 
+  font-size: 4.5em; 
+  line-height: .9em;
+  letter-spacing: -.06em; 
+  margin:0 0 .5em;
+}
+
+blockquote {
+  margin-left: 1em;
+  border-left: 1px solid #ccc;
+}
+
+blockquote p {
+  padding-left: 1em;
+  line-height: 1em;
+}
+
+
+.label a {
+  color: #fdfdfd;
+  font-family: Helvetica, "Helvetica Neue", Arial; Sans;
+} 
+
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  
+}
+.footer p {
   margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
+  color: #777; font-size: 14px;
 }
 
-/* The white background content wrapper */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
-}
-
-/* Page header tweaks */
-.page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
-}
-
-.topbar .btn {
-  border: 0;
+.footer-links {
+  margin: 10px 0;
 }
 
 
-/* tag_box ======================================================== */
+
+.pagination ul {
+  font-family: helvetica, "Helvetica Neue", Arial, sans;
+}
+
+/* Tag box */
 
 .tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
+  list-style:none;
+  margin:0;
+  padding:5px 0 ;
+  overflow:hidden;
+  font-family: helvetica, "Helvetica Neue", Arial, sans;
+  font-size: .8em;
+  font-weight: 600;
+  
 }
 .tag_box li {
-	line-height:28px;
+  line-height:28px;
+  
 }
 .tag_box.inline li {
-	float:left;
+  float:left;
 }
 .tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
+  margin: 4px 0;
+  color:#fdfdfd;
+  border-radius: 50%;
+  text-decoration:none;
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background-color: #333;
+  line-height:68px;
+  
 }
+
+
 .tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
+  vertical-align:super;
+  font-size:0.8em;
 }
 .tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
 }
-	
