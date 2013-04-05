@@ -93,7 +93,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+    .wrapper {
+                max-width: 71.25em;
+                margin: 0 auto;
+                text-align: center;
+            }
 
 
 
