@@ -1,0 +1,1 @@
+Zepto(function($){ alert('Ready to Zepto!') })
