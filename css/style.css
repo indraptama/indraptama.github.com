@@ -42,7 +42,7 @@
  * ------------------------------------
  * 
  * A. B.E.M Naming Style
- *     http://www.bem.org;
+ *     http://www.bem.info;
  *     This style will use BEM (Block, Element, Modifer)
  *     naming style.
  * 
@@ -54,12 +54,26 @@
  * E. Style Usage
  * F. Credits
  * G. License
- *    This code release with under mix license 
+ *    
  *    1. Normalize.css v.2.1.0
- *       - Used for making site look same on cross platform browser
- *       Normalize.css v2.1.0 is created by Necholas Gallhager
- *       release under MIT license
- *       Project url: git.io/normalize;
+ *       by Nicolas Gallagher
+ *       Licensed under MIT license
+ *       url: git.io/normalize;
+ *
+ *    2. Csswizardry-grids
+ *       by Harry Roberts
+ *       Licensed under the Apache License, Version 2.0
+ *       url: https://github.com/csswizardry/csswizardry-grids
+ *
+ *    3. beautons
+ *       by Harry Roberts
+ *       Licensed under the Apache License, Version 2.0
+ *       url: https://github.com/csswizardry/beautons
+ *
+ *    4. typeplate
+ *       Zachary Kain (@zakkain) & Dennis Gaebel (@gryghostvisuals)
+ *       Licensed under Creative Commmons (http://creativecommons.org/licenses/by/3.0)
+ *       url: http://typeplate.com;
 -*/
 /* -------------------------------------------
  *  I. DEFINITIONS AND VARIABLES SETTINGS [-I] 
