@@ -85,6 +85,25 @@
 /*
  * 1. Typographic / Typelate Variables [-IA1]
  */
+/*------------------------------------*\
+	SVG Pattern
+/*------------------------------------*\
+/**
+ * by  : Philip Rogers;
+ * url : http://philbit.com/svgpatterns;
+ */
+/**
+ * White Carbon
+ * url : http://codepen.io/progers/pen/dhvim;
+ */
+/**
+ * White Dot
+ * http://codepen.io/progers/pen/pmGrg
+ */
+/**
+* Thin Strips
+* http://codepen.io/progers/pen/mGcLz
+*/
 /* ------------------------------------*\
  *	II.  MIXINS AND FUNCTIONS [-II]
 /* ------------------------------------ */
@@ -519,6 +538,8 @@ body {
   -o-hyphens: auto;
   hyphens: auto;
   color: #333333;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+  background-repeat: repeat;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -68,7 +68,9 @@
 
 @import "bedog/base/definitions"; 
 
-@import "bedog/base/vars"; 
+@import "bedog/base/vars";
+
+@import "bedog/element/svg-bg"; 
 
 /* ------------------------------------*\
  *	II.  MIXINS AND FUNCTIONS [-II]
