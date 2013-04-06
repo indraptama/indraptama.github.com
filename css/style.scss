@@ -1,0 +1,84 @@
+/*! 
+ * ------------------------------------
+ *     indraptama.web.id
+ *     Casecading StyleSheets
+ * ------------------------------------
+ * 
+ * ---- Table Of Content ----
+ * 
+ * * INTRODUCTION
+ *     A. B.E.M methodology for naming
+ *     B. OOCSS Principles
+ *     C. Sass
+ *     D. Source Order
+ *     E. Style Usage
+ *     F. Credits
+ *     G. License
+ * 
+ * I. DEFINITIONS AND VARIABLES SETTINGS .......... [-I]
+ *     A. Color Definitions ....................... [-IA]
+ *        1. Monochrome Color ..................... [-IA1]
+ *        2. Red Based / Dominant Color ........... [-IA2]
+ *        3. Yellow Based / Dominant Color ........ [-IA3]
+ *        4. Blue Based / Dominant Color .......... [-IA4]
+ *
+ *     B. Style Variables Settings ................ [-IB]
+ * 
+ * II. FUNCTIONS AND MIXINS
+ *     A. Sass Function
+ *     B. Sass Mixins Variables
+ * 
+ * III. VENDOR IMPORTS 
+ *     A. Normalize.css as default reset
+ *     B. Typeplate as default typographic style
+ *     C. Csswizardry-Grids
+ *     D. Beautons	
+ * 
+ * end */
+
+/*! 
+ * ------------------------------------
+ *  * INTRODUCTION
+ * ------------------------------------
+ * 
+ * A. B.E.M Naming Style
+ *     http://www.bem.org;
+ *     This style will use BEM (Block, Element, Modifer)
+ *     naming style.
+ * 
+ * B. OOCSS Principles
+ * 
+ * C. Sass
+ * 
+ * D. Source Order
+ * E. Style Usage
+ * F. Credits
+ * G. License
+ *    This code release with under mix license 
+ *    1. Normalize.css v.2.1.0
+ *       - Used for making site look same on cross platform browser
+ *       Normalize.css v2.1.0 is created by Necholas Gallhager
+ *       release under MIT license
+ *       Project url: git.io/normalize;
+-*/
+
+/* -------------------------------------------
+ *  I. DEFINITIONS AND VARIABLES SETTINGS [-I] 
+ * ------------------------------------------- */
+
+@import "bedog/base/definitions"; 
+
+@import "bedog/base/vars"; 
+
+/* ------------------------------------*\
+ *	II.  MIXINS AND FUNCTIONS [-II]
+/* ------------------------------------ */
+//@import "bedog/functions/mixins"; /* Various Mixins */
+
+
+/* -------------------------------------------
+ *  III. VENDOR IMPORTS [-III] 
+ * ------------------------------------------- */
+@import "bedog/vendor/normalize.scss"; 
+@import "bedog/vendor/typeplate.scss"; 
+

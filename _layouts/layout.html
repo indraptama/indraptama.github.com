@@ -12,10 +12,9 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="{{site.baseurl}}js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,20 +22,46 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    <div class="wrapper">
-      <h1>Sorry this site is still under construction</h1>
-      <p><a href="http://www.indraptama.blogspot.com" alt="temporary site">Visit my blogger</a></p>
-      
+    
+      <header>
+        <h1 class="delta">indraptama</h1>
+        <nav>
+          <a href="">Home</a>
+          <a href="">Arcives</a>
+          <a href="">Project</a>
+          <a href="">About</a>
+        </nav>
+      </header>
+      <!-- Web Content Start Here -->
       <section>
         {{ content }}
       </section>
-    </div>
+      <!-- Web Content Ends Here -->
+    
+        
         
 
+
+
+
+        <!-- Site Footer -->
+      <footer>
+        <div class="wrapper">
+          <div class="footer--copyright">
+            <p class="zeta">© Indra Pratama Putra | 2013</p>
+          </div>
+        </div>
+      </footer>
+      
+        <!-- End Site Footer -->
          <script>
             document.write('<script src=' +
-            ('__proto__' in {} ? 'js/vendor/zepto.min' : 'js/vendor/jquery-1.9.1.min') +
+            ('__proto__' in {} ? '{{site.baseurl}}js/vendor/zepto.min' : '{{site.baseurl}}js/vendor/jquery-1.9.1.min') +
             '.js><\/script>')
+        </script>
+
+        <script>
+          Zepto(function($){ alert('Ready to Zepto!') })
         </script>
         
         <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
