@@ -19,7 +19,7 @@ $pure-white 	: #fff;
  * 2. Red Based / Dominant Color [-IA2]
  */
 $red-pastel 	: #db6d4c;
-	
+$red            : #e43;
 
 
 /*
@@ -31,6 +31,12 @@ $red-pastel 	: #db6d4c;
  */
 $blue-pastel 	: #8f83fc;
 
+
+/* 
+ * 5. Company Color / Your Main Color [-IA5]
+ */
+$company-color        : $blue-pastel;
+//$company-color-2      : ;
 
 
 

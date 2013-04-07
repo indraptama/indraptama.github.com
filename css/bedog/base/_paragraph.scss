@@ -1,0 +1,57 @@
+/**
+ * 1. Typography Reset 
+ */
+
+
+/*
+ * 2. Article paragraph style
+ */
+article {
+	p {
+		/* remove top & bottom margin on first paragraph */
+		margin-bottom: 0px; 
+		margin-top: 0px;
+		
+		/* add extra line-height on article paragraph */
+		line-height: $base-line-height ;
+		
+		/* add paragraph hypenation */
+		@include vendor-prefix(hyphens, auto);
+
+
+
+		& + p {
+			/* add margin on top & bottom start on second paragraph */
+			//@include x-rem(margin-top, ($base-line-height / 2));
+			/* add text indentation for better reading experience */
+			//@include x-rem(text-indent, ($base-line-height * 2)) 
+			@include pxtorem(margin-top, 8);
+			@include pxtorem(text-indent, 32)
+
+		}
+	}
+}
+
+/**
+ * 3. Paragraph width 
+ */
+@if $lock-paragraph-width == true {
+	article {
+		p {
+			@include pxtorem(max-width, $paragraph-width-value );
+			/* make paragraph center of container*/
+			@if $center-article-paragraph == true {
+					margin-left: auto; 
+					margin-right: auto;
+					}
+		}
+	}
+}
+
+/**
+ * 4. Lead Paragraph
+ *    - Make first paragraph slightly bigger
+ */
+ .lead {
+	@include pxtorem(font-size, 18);
+}

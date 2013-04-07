@@ -1,0 +1,19 @@
+/*----------------------------------------------------*\
+ *  PX to REM Calculation with fallback [-IIB1]
+/*----------------------------------------------------*\
+/**
+ * This mixin will convert px measure unit to rem
+ * and will add px fallback
+ * Usage :
+ * @include pxtorem(font-size, 18);
+ *
+ * result :
+ * font-size : 16px;
+ * font-size : 1rem; 
+ */
+
+
+@mixin pxtorem($property, $value) {
+	#{$property} : $value * 1px;
+	#{$property} : ($value / $base-font-size) * 1rem;
+}
