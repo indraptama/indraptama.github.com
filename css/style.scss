@@ -102,6 +102,10 @@
 
  @import "bedog/func-mixin/prefix";
 
+ @import "bedog/func-mixin/clearfix-m";
+
+ @import "bedog/func-mixin/media-query-m";
+
 /* -------------------------------------------
  *  III. VENDOR IMPORTS [-III] 
  * ------------------------------------------- */
@@ -112,7 +116,7 @@
 
 
 /* -------------------------------------------
- *  III. BASE STYLE [-IV] 
+ *  IV. BASE STYLE [-IV] 
  * ------------------------------------------- */
  @import "bedog/base/main";
 
@@ -120,4 +124,8 @@
 
 
 
+/* -------------------------------------------
+ *  VII. HELPER CLASS [-VII] 
+ * ------------------------------------------- */
 
+ @import "bedog/base/helper";

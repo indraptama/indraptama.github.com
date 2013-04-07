@@ -1,0 +1,33 @@
+/*
+ * Media Query Mixins
+ */
+$small-breakpoint: 480;
+$medium-breakpoint: 768;
+$large-breakpoint: 1140;
+ 
+ /* Convert all breakpoint in px unit to breakpoint in em unit  */
+$small-breakpoint-em: em($small-breakpoint);
+$medium-breakpoint-em: em($medium-breakpoint);
+$large-breakpoint-em: em($large-breakpoint);
+ 
+ /* Mixin Definitions */
+ $baby-bear: "only screen and (max-width: "#{$small-breakpoint-em}")";
+ $brother-bear: "only screen and (min-width: "#{$small-breakpoint-em}")";
+ //$mama-bear: only screen and (min-width: em($medium-breakpoint + 1)) and (max-width: em($large-breakpoint));
+ $papa-bear : "only screen and (min-width: "#{$large-breakpoint-em}")";
+
+ /* Mixin */
+ @mixin breakpoint($breakpoint){
+ 	@if $breakpoint == baby-bear {
+ 		@media #{$baby-bear} {@content; }
+ 	}
+
+ 	@else if $breakpoint == brother-bear {
+ 		@media #{$brother-bear} {@content; }
+ 	}
+
+ 	@else if $breakpoint == papa-bear {
+ 		@media #{$papa-bear} {@content; }
+ 	}
+ }   
+

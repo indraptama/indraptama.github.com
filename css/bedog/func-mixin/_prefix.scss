@@ -4,7 +4,7 @@
 /**
  * This mixin will add vendor prefix
  * example :
- * @inlcude prefix(box-shadow, 0px 0px 25px 3px);
+ * @inlcude prefix(hyphens, 0px 0px 25px 3px);
  */
 
  @mixin vendor-prefix($property, $value) {

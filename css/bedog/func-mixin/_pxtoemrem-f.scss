@@ -13,6 +13,6 @@
 	@return $inpx / $base-font-size * 1rem;
 }
 /* px to em function */
-@function rem($inpx) {
-	@return $inpx / $base-font-size * 1rem;
+@function em($inpx) {
+	@return ($inpx / $base-font-size) * 1em;
 }

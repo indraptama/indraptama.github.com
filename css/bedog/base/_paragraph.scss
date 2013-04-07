@@ -43,6 +43,7 @@ article {
 			@if $center-article-paragraph == true {
 					margin-left: auto; 
 					margin-right: auto;
+					@include breakpoint(baby-bear){padding: 0px 1rem;}
 					}
 		}
 	}
@@ -53,5 +54,5 @@ article {
  *    - Make first paragraph slightly bigger
  */
  .lead {
-	@include pxtorem(font-size, 18);
+	@include pxtorem(font-size, ($base-font-size + 1.168));
 }

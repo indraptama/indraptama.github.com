@@ -1,32 +1,28 @@
-/* ------------------------------------*\
-			indraptama.web.id
-		  Casecading StyleSheets
-/*------------------------------------*\
-
-/*! ---------- Table Of Content ---------- *\
-
-- Introduction
-    A. B.E.M methodology for naming
-    B. OOCSS Principles
-    C. Sass
-    D. Source Order
-    E. Style Usage
-    F. Credits
-    G. License
-
- I.	Definitions and Variables Settings
-    A. Color Definitions
-    B. Style Variables
-
- II. Mixins and Functions
-    A. Color Definitions
-    B. Style Variables
-
- III. Vendor Imports 
-    A. Normalize.css  
-    B. Typeplate
-    C. Csswizardry-Grids
-    D. Beautons	
-
-
-/* end of Table of Conten */
+/* 
+ * ------------------------------------
+ *     Bedog
+ *     By. Indra Pratama Putra
+ *     http://indraptama.github.io/bedog; 
+ *     Casecading StyleSheets
+ * ------------------------------------ *//* G. License
+ *    
+ *    1. Normalize.css v.2.1.0
+ *       by Nicolas Gallagher
+ *       Licensed under MIT license
+ *       url: git.io/normalize;
+ *
+ *    2. Csswizardry-grids
+ *       by Harry Roberts
+ *       Licensed under the Apache License, Version 2.0
+ *       url: https://github.com/csswizardry/csswizardry-grids
+ *
+ *    3. beautons
+ *       by Harry Roberts
+ *       Licensed under the Apache License, Version 2.0
+ *       url: https://github.com/csswizardry/beautons
+ *
+ *    4. typeplate
+ *       Zachary Kain (@zakkain) & Dennis Gaebel (@gryghostvisuals)
+ *       Licensed under Creative Commmons (http://creativecommons.org/licenses/by/3.0)
+ *       url: http://typeplate.com;
+-*/body{background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+") repeat;font-family:"Open Sans";text-rendering:optimizeLegibility}@media only screen and (max-width: 30em){html{font-size:90%;color:blue}}@media only screen and (min-width: 30em){html{font-size:100%;color:red}}@media only screen and (min-width: 71.25em){html{font-size:110%;color:green}}article p{margin-bottom:0px;margin-top:0px;line-height:1.6182;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto}article p+p{margin-top:8px;margin-top:0.5rem;text-indent:32px;text-indent:2rem}article p{max-width:500px;max-width:31.25rem;margin-left:auto;margin-right:auto}@media only screen and (max-width: 30em){article p{padding:0px 1rem}}.lead{font-size:17.168px;font-size:1.073rem}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}
