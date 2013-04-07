@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: blogs
 title: Moving from blogger to github using jekyll
 ---
 # Moving from blogger to github using jekyll
