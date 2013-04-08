@@ -47,7 +47,7 @@ article {
         }
 		/* Paragraph style on fixed article width */
  		p {
-
+			
 			@include pxtorem(max-width, $article-width-value );
 			/* make paragraph center of container*/
 			@if $center-article-paragraph == true {

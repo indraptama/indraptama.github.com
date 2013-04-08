@@ -11,6 +11,7 @@
  	@include pxtorem(margin-bottom, 16);
  	line-height: 1;
  	font-family: $heading-font-family;
+ 	font-weight: 700;
  	letter-spacing: -1px;
  	color:  $base-heading-color;
  }
