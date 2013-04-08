@@ -1,9 +1,4 @@
-/*
- * Media Query Mixins
- */
-$small-breakpoint: 480;
-$medium-breakpoint: 768;
-$large-breakpoint: 1140;
+
  
  /* Convert all breakpoint in px unit to breakpoint in em unit  */
 $small-breakpoint-em: em($small-breakpoint);

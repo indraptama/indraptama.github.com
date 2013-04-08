@@ -5,10 +5,10 @@ title: Jekyll Base
 
 <div class="content">
   <div class="related">
-    <ul>
+    <ul class="list list__noBullet">
       {% for post in site.posts %}
       <li>
-	<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+	<time>{{ post.date | date: "%B %e, %Y" }}</time> <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>

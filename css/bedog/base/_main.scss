@@ -11,15 +11,12 @@ body {
 html {
 @include breakpoint(baby-bear) {
 		font-size: 90%;
-		color: blue;
 	};
 @include breakpoint(brother-bear) {
 		font-size: 100%;
-		color: red;
 	};
 
 @include breakpoint(papa-bear) {
 		font-size: 110%;
-		color: green;
 	};
 }

@@ -6,7 +6,8 @@
 /*
  * 1. Typographic / Typelate Variables [-IA1]
  */
-    $base-font-family : "Open Sans";
+    $base-font-family : "Droid Serif", Georgia, Serif;
+    $heading-font-family: "Lato";
     $base-font-size : 16; //in PX
     $base-font-size-percent : 100; // in percent
     $base-line-height : 1.6182;
@@ -16,10 +17,19 @@
 	$base-heading-color: $black;
 
 	/* Use paragraph width lock? */
-	$lock-paragraph-width : true;
+	$lock-article-width : true;
 
 	/* if you set paragraph width true, then set paragraph max-width in px unit*/
-	$paragraph-width-value: 500; 
+	$article-width-value: 550; 
 
 	/* Make article Paragraph always center of container */
 	$center-article-paragraph: true!default;
+
+
+
+/**
+ *  Setting Media Queries Breakpoint
+ */
+    $small-breakpoint: 480; /* baby bear : 480*/
+    $medium-breakpoint: 768; /* mama bear: */
+    $large-breakpoint: 1140; /* papa Bear */
