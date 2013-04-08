@@ -4,12 +4,12 @@
 $small-breakpoint-em: em($small-breakpoint);
 $medium-breakpoint-em: em($medium-breakpoint);
 $large-breakpoint-em: em($large-breakpoint);
- 
+$xlarge-breakpoint-em: em($xlarge-breakpoint); 
  /* Mixin Definitions */
  $baby-bear: "only screen and (max-width: "#{$small-breakpoint-em}")";
  $brother-bear: "only screen and (min-width: "#{$small-breakpoint-em}")";
- //$mama-bear: only screen and (min-width: em($medium-breakpoint + 1)) and (max-width: em($large-breakpoint));
- $papa-bear : "only screen and (min-width: "#{$large-breakpoint-em}")";
+ $mama-bear : "only screen and (min-width: "#{$large-breakpoint-em}")";
+ $papa-bear : "only screen and (min-width: "#{$xlarge-breakpoint-em}")";
 
  /* Mixin */
  @mixin breakpoint($breakpoint){
@@ -19,6 +19,10 @@ $large-breakpoint-em: em($large-breakpoint);
 
  	@else if $breakpoint == brother-bear {
  		@media #{$brother-bear} {@content; }
+ 	}
+
+ 	@else if $breakpoint == mama-bear {
+ 		@media #{$mama-bear} {@content; }
  	}
 
  	@else if $breakpoint == papa-bear {
