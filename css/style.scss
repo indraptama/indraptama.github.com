@@ -86,10 +86,11 @@
  * ------------------------------------------- */
 
 @import "bedog/base/definitions"; 
+@import "bedog/extra/svg-bg"; 
 
 @import "bedog/base/vars";
 
-@import "bedog/extra/svg-bg"; 
+
 
 /* ------------------------------------*\
  *	II.  MIXINS AND FUNCTIONS [-II]
@@ -105,6 +106,8 @@
  @import "bedog/func-mixin/prefix";
 
  @import "bedog/func-mixin/clearfix-m";
+
+ @import "bedog/func-mixin/helper";
 
  @import "bedog/func-mixin/media-query-m";
 
@@ -124,16 +127,23 @@
 
  @import "bedog/base/headings";
 
+ @import "bedog/base/link";
+
+ @import "bedog/base/images";
+
+ @import "bedog/base/list";
+
  @import "bedog/base/article";
 
  @import "bedog/base/paragraph";
 
- @import "bedog/base/list";
+ 
 
 
 
 /* -------------------------------------------
- *  VII. HELPER CLASS [-VII] 
+ *  VII. OBJECT CLASS [-VII] 
  * ------------------------------------------- */
 
- @import "bedog/func-mixin/helper";
+ @import "bedog/object/buttons";
+ 

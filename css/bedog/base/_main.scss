@@ -38,11 +38,15 @@
  *  Body Setting [-IV1B]
  *
  * [1] Set default body background.
- * [2] Set default font family
- * [3] Set text-rendering to for better kerning
+ * [2] Set Background repeat.
+ * [3] Set default font family.
+ * [4] Set text-rendering to for better kerning.
  */
 body {
-    background: $white-dot-bg repeat; /* 1 */
-    font-family: $base-font-family; /* 2 */
-    text-rendering: optimizeLegibility; /* 3 */
+    background: $site-base-bg; /* 1 */
+    background-repeat: $bg-repeat; /* 2 */
+    font-family: $base-font-family; /* 3 */
+    text-rendering: optimizeLegibility; /* 4 */
+    padding: 0;
+    margin: 0;
 }

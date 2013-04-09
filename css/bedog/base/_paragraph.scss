@@ -11,22 +11,7 @@
 /**
  * 3. Paragraph width 
  */
-@if $lock-article-width == true {
-	article {
-		p {
-			@include pxtorem(max-width, $article-width-value );
-			/* make paragraph center of container*/
-			@if $center-article-paragraph == true {
-				margin-left: auto; 
-				margin-right: auto;
-				@include breakpoint(baby-bear){
-					@include pxtorem(padding-left, 8);
-					@include pxtorem(padding-right, 8);
-				}
-			}
-		}
-	}
-}
+
 
 /**
  * 4. Lead Paragraph

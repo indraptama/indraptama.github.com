@@ -6,7 +6,7 @@
 /*
  * 1. Typographic / Typelate Variables [-IA1]
  */
-    $base-font-family : "Droid Serif", Georgia, Serif;
+    $base-font-family : "Open Sans", Georgia, Serif;
     $heading-font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
     $base-font-size : 16; //in PX
     $second-base-font-size : 13; //in PX for modular scale important number
@@ -16,14 +16,14 @@
 
 
     /* use responsive text */
-    $use_responsive_text : true;
+    $use_responsive_text : false;
 
     /* Font color */
     $base-font-color: #444;
 	$base-heading-color: $black;
 
 	/* Use paragraph width lock? */
-	$lock-article-width : true;
+	$lock-article-width : false;
 
 	/* if you set paragraph width true, then set paragraph max-width in px unit*/
 	$article-width-value: 550; //in px 
@@ -31,15 +31,35 @@
 	/* Make article Paragraph always center of container */
 	$center-article-paragraph: true!default;
 
+/**
+ *  Link Color
+ * 
+ */
+    $link-color: $blue-pastel;
+
+
+/**
+ * Site background setting
+ *
+ * [1] Set background color or image, see extra/_svg-bg.scss
+ * [2] Set background repeat type.
+ *     Choice : repeat, repeat-x, repeat-y, none; 
+ */    
+    $site-base-bg: $white-dot-bg; /* 1 */
+    $bg-repeat: none; /* 2 */
+
+
 
 
 /**
  *  Setting Media Queries Breakpoint
  */
-    $small-breakpoint: 480; /* baby bear : 480*/
+    $small-breakpoint: 480; /* baby bear : 480px*/
     $medium-breakpoint: 768; /* brother bear: */
     $large-breakpoint: 1140; /* mama Bear */
     $xlarge-breakpoint: 1440; /* papa Bear */
 
 
-    $base-spacing-unit: $base-line-height;
+    $base-spacing-unit: $base-line-height * $base-font-size; /* in px  */
+    $half-spacing-unit: $base-spacing-unit / 2; /* in px */
+

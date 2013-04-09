@@ -1,18 +1,23 @@
 /**
- * Basic list styling
+ * Basic list height styling
  */
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+	@include pxtorem(margin-top, $half-spacing-unit /2 );
+	@include pxtorem(margin-bottom, $half-spacing-unit /2 )
+}
 
 
-
-/**
- * No Style List
- */
 
  /**
  * Reset list style
  */
 
-.list__reset {
+.list--reset {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -24,12 +29,34 @@
 
 /**
  * No Bullet list
+ *   
  */
 
- .list__noBullet {
-	padding-left: 0;
+ .list--no-bullet {
+	@include pxtorem(padding-left, 16);
 	list-style: none;
  }
 
-
+/**
+ * Nested ordered list in roman 
+ * 
+ */
+ .list--roman {
+ 	list-style: upper-roman;
+ 	ol {
+ 		list-style: upper-alpha;
+ 		ol {
+			list-style: decimal;
+			ol {
+				list-style: lower-alpha;
+				ol {
+					list-style: disc;
+					ol {
+						list-style: square;
+					}
+				}
+			}
+ 		}
+ 	}
+ }
  

@@ -21,48 +21,48 @@
   * Heading size based on modular scale
   */
 
- .tera__size {
+ .tera-size {
  	@include pxtorem(font-size, modular-scale($base-font-size,   4, 1.618) )
  }
 
- .giga__size {
+ .giga-size {
 	@include pxtorem(font-size, modular-scale( $second-base-font-size,   4, 1.618) )
  }
 
- .mega__size {
+ .mega-size {
 	@include pxtorem(font-size, modular-scale($base-font-size,   3, 1.618) )
  }
 
- .kilo__size {@include pxtorem(font-size, modular-scale( $second-base-font-size,   3, 1.618) )}
+ .kilo-size {@include pxtorem(font-size, modular-scale( $second-base-font-size,   3, 1.618) )}
 
  h1,
- .alpha__size {
+ .alpha-size {
  	@include pxtorem(font-size, modular-scale($base-font-size,   2, 1.618) )
  }
 
  h2,
- .beta__size {
+ .beta-size {
 	@include pxtorem(font-size, modular-scale( $second-base-font-size,   2, 1.618) )
  }
 
  h3,
- .gamma__size {
+ .gamma-size {
  	@include pxtorem(font-size, modular-scale($base-font-size,  1, 1.618) )
  }
 
  h4,
- .delta__size {
+ .delta-size {
 	@include pxtorem(font-size, modular-scale( $second-base-font-size,   1, 1.618) )
  }
 
  h5,
  .base-size,
- .epsilon__size {
+ .epsilon-size {
 	@include pxtorem(font-size, modular-scale($base-font-size,   0, 1.618) )
  }
 
  h6,
  .small,
- .zeta__size{
+ .zeta-size{
 	@include pxtorem(font-size, modular-scale( $second-base-font-size,   0, 1.618) )
  }

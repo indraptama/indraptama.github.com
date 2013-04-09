@@ -1,0 +1,21 @@
+/**
+ * Flexible Images
+ *
+ * [1] Set image to fluid
+ * [2] Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+ 	max-width: 100%; /*  */
+ 	height: auto;
+ 	vertical-align: middle; /* 2 */
+ }
+
+
+/**
+ * Make image full strecth
+ */
+.img--full {
+ 	width: 100%;
+ 	overflow: auto;
+ }
