@@ -89,7 +89,7 @@
 
 @import "bedog/base/vars";
 
-@import "bedog/element/svg-bg"; 
+@import "bedog/extra/svg-bg"; 
 
 /* ------------------------------------*\
  *	II.  MIXINS AND FUNCTIONS [-II]
@@ -99,6 +99,8 @@
  @import "bedog/func-mixin/pxtoemrem-f";
 
  @import "bedog/func-mixin/pxtorem-m";
+
+ @import "bedog/func-mixin/modular-scale";
 
  @import "bedog/func-mixin/prefix";
 
@@ -134,4 +136,4 @@
  *  VII. HELPER CLASS [-VII] 
  * ------------------------------------------- */
 
- @import "bedog/base/helper";
+ @import "bedog/func-mixin/helper";

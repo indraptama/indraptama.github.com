@@ -100,16 +100,23 @@
 /* 
  * 5. Company Color / Your Main Color [-IA5]
  */
-/*
- * B. Style Variables Settings [-IA]
- *-----------------------------------*/
+/* B. Style Variables Settings [-IA]
+*-----------------------------------*/
 /*
  * 1. Typographic / Typelate Variables [-IA1]
  */
+/* use responsive text */
 /* Font color */
 /* Use paragraph width lock? */
 /* if you set paragraph width true, then set paragraph max-width in px unit*/
 /* Make article Paragraph always center of container */
+/**
+ *  Setting Media Queries Breakpoint
+ */
+/* baby bear : 480*/
+/* brother bear: */
+/* mama Bear */
+/* papa Bear */
 /*------------------------------------*\
 	SVG Pattern
 /*------------------------------------*\
@@ -143,6 +150,7 @@
  */
 /* px to rem function */
 /* px to em function */
+/* convert rem to px */
 /*----------------------------------------------------*\
  *  PX to REM Calculation with fallback [-IIB1]
 /*----------------------------------------------------*\
@@ -155,6 +163,11 @@
  * result :
  * font-size : 16px;
  * font-size : 1rem; 
+ */
+/**
+ * Modular Scale
+ * url : modularscale.com;
+ * mixin bourbon.io
  */
 /*------------------------------------*\
  *  Vendor Prefix
@@ -170,9 +183,6 @@
  * Example usage :
  * .widget {@include clearfix;};
  */
-/*
- * Media Query Mixins
- */
 /* Convert all breakpoint in px unit to breakpoint in em unit  */
 /* Mixin Definitions */
 /* Mixin */
@@ -183,30 +193,226 @@
  *  IV. BASE STYLE [-IV] 
  * ------------------------------------------- */
 /**
- * Main Setting
+ * Enable Global Box-sizing
  */
-body {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+") repeat;
-  font-family: "Open Sans";
-  text-rendering: optimizeLegibility;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/**
+ *
+ * Responsive Text [-IV1A]
+ *
+ * If you set use_responsive text = true, body text size will
+ * incerease in certain break point
+ */
 @media only screen and (max-width: 30em) {
   html {
-    font-size: 90%;
-    color: blue;
+    font-size: 95%;
   }
 }
 @media only screen and (min-width: 30em) {
   html {
     font-size: 100%;
-    color: red;
   }
 }
 @media only screen and (min-width: 71.25em) {
   html {
     font-size: 110%;
-    color: green;
+  }
+}
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 125%;
+  }
+}
+
+/**
+ *
+ *  Body Setting [-IV1B]
+ *
+ * [1] Set default body background.
+ * [2] Set default font family
+ * [3] Set text-rendering to for better kerning
+ */
+body {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+") repeat;
+  /* 1 */
+  font-family: "Droid Serif", Georgia, Serif;
+  /* 2 */
+  text-rendering: optimizeLegibility;
+  /* 3 */
+}
+
+/**
+ * Heading Reset
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+/**
+ * Heading Size
+ * Heading size based on modular scale
+ */
+.tera__size {
+  font-size: 109.65642px;
+  font-size: 6.85353rem;
+}
+
+.giga__size {
+  font-size: 89.09584px;
+  font-size: 5.56849rem;
+}
+
+.mega__size {
+  font-size: 67.77282px;
+  font-size: 4.2358rem;
+}
+
+.kilo__size {
+  font-size: 55.06541px;
+  font-size: 3.44159rem;
+}
+
+h1,
+.alpha__size {
+  font-size: 41.88678px;
+  font-size: 2.61792rem;
+}
+
+h2,
+.beta__size {
+  font-size: 34.03301px;
+  font-size: 2.12706rem;
+}
+
+h3,
+.gamma__size {
+  font-size: 25.888px;
+  font-size: 1.618rem;
+}
+
+h4,
+.delta__size {
+  font-size: 21.034px;
+  font-size: 1.31463rem;
+}
+
+h5,
+.base-size,
+.epsilon__size {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+h6,
+.small,
+.zeta__size {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+/**
+ *
+ * Default Article Styling
+ *
+ * [1] add Hyphenation to article text
+ * [2] remove top & bottom margin on first paragraph
+ * [3] add margin-top and margin-bottom start on second paragraph
+ * [4]
+ */
+article {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  /* 1 */
+  line-height: 1.6182;
+}
+article p {
+  margin-bottom: 0;
+  /* 2 */
+  margin-top: 0;
+  /* 2 */
+}
+article p + p {
+  margin-top: 6.4728px;
+  margin-top: 0.40455rem;
+  /* 3 */
+  margin-bottom: 6.4728px;
+  margin-bottom: 0.40455rem;
+  /* 3 */
+  text-indent: 25.8912px;
+  text-indent: 1.6182rem;
+}
+
+/**
+ * Fixed article Width 
+ */
+article {
+  /* Heading style on fixed article width */
+  /* Paragraph style on fixed article width */
+  /* List style on fixed article width */
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  max-width: 750px;
+  max-width: 46.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+article p {
+  max-width: 550px;
+  max-width: 34.375rem;
+  /* make paragraph center of container*/
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 30em) {
+  article p {
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
+  }
+}
+article ul,
+article ol,
+article dl {
+  margin-top: 0;
+  max-width: 518px;
+  max-width: 32.375rem;
+  /* make paragraph center of container*/
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 30em) {
+  article ul,
+  article ol,
+  article dl {
+    padding: 0 1.618rem 0 3.236rem;
   }
 }
 
@@ -216,41 +422,22 @@ body {
 /*
  * 2. Article paragraph style
  */
-article p {
-  /* remove top & bottom margin on first paragraph */
-  margin-bottom: 0px;
-  margin-top: 0px;
-  /* add extra line-height on article paragraph */
-  line-height: 1.6182;
-  /* add paragraph hypenation */
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-}
-article p + p {
-  /* add margin on top & bottom start on second paragraph */
-  /* add text indentation for better reading experience */
-  margin-top: 8px;
-  margin-top: 0.5rem;
-  text-indent: 32px;
-  text-indent: 2rem;
-}
-
 /**
  * 3. Paragraph width 
  */
 article p {
-  max-width: 500px;
-  max-width: 31.25rem;
+  max-width: 550px;
+  max-width: 34.375rem;
   /* make paragraph center of container*/
   margin-left: auto;
   margin-right: auto;
 }
 @media only screen and (max-width: 30em) {
   article p {
-    padding: 0px 1rem;
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
   }
 }
 
@@ -261,6 +448,33 @@ article p {
 .lead {
   font-size: 17.168px;
   font-size: 1.073rem;
+}
+
+/**
+ * Basic list styling
+ */
+/**
+ * No Style List
+ */
+/**
+* Reset list style
+*/
+.list__reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list__reset > li {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * No Bullet list
+ */
+.list__noBullet {
+  padding-left: 0;
+  list-style: none;
 }
 
 /* -------------------------------------------

@@ -1,5 +1,5 @@
-/*
- * B. Style Variables Settings [-IA]
+
+ /* B. Style Variables Settings [-IA]
  *-----------------------------------*/
 
 
@@ -9,18 +9,24 @@
     $base-font-family : "Droid Serif", Georgia, Serif;
     $heading-font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
     $base-font-size : 16; //in PX
+    $second-base-font-size : 13; //in PX for modular scale important number
     $base-font-size-percent : 100; // in percent
     $base-line-height : 1.6182;
+    
+
+
+    /* use responsive text */
+    $use_responsive_text : true;
 
     /* Font color */
-    $base-font-color: $light-black;
+    $base-font-color: #444;
 	$base-heading-color: $black;
 
 	/* Use paragraph width lock? */
 	$lock-article-width : true;
 
 	/* if you set paragraph width true, then set paragraph max-width in px unit*/
-	$article-width-value: 550; 
+	$article-width-value: 550; //in px 
 
 	/* Make article Paragraph always center of container */
 	$center-article-paragraph: true!default;
@@ -31,6 +37,9 @@
  *  Setting Media Queries Breakpoint
  */
     $small-breakpoint: 480; /* baby bear : 480*/
-    $medium-breakpoint: 768; /* mama bear: */
-    $large-breakpoint: 1140; /* papa Bear */
+    $medium-breakpoint: 768; /* brother bear: */
+    $large-breakpoint: 1140; /* mama Bear */
     $xlarge-breakpoint: 1440; /* papa Bear */
+
+
+    $base-spacing-unit: $base-line-height;

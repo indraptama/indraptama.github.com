@@ -1,26 +1,25 @@
+/**
+ *
+ * Default Article Styling
+ *
+ * [1] add Hyphenation to article text
+ * [2] remove top & bottom margin on first paragraph
+ * [3] add margin-top and margin-bottom start on second paragraph
+ * [4]
+ */
+
 article {
-	@include vendor-prefix(hyphens, auto);
+	@include vendor-prefix(hyphens, auto); /* 1 */
 	line-height: $base-line-height ;
+	
 	p {
-		/* remove top & bottom margin on first paragraph */
-		margin-bottom: 0px; 
-		margin-top: 0px;
-		
-		/* add extra line-height on article paragraph */
+		margin-bottom: 0; /* 2 */
+		margin-top: 0; /* 2 */
 
-		
-		/* add paragraph hypenation */
-		@include vendor-prefix(hyphens, auto);
-
-
-
-		& + p {
-			/* add margin on top & bottom start on second paragraph */
-			//@include x-rem(margin-top, ($base-line-height / 2));
-			/* add text indentation for better reading experience */
-			//@include x-rem(text-indent, ($base-line-height * 2)) 
-			@include pxtorem(margin-top, 8);
-			@include pxtorem(text-indent, 32)
+		& + p { 
+			@include pxtorem(margin-top, px($base-line-height/4) ); /* 3 */
+			@include pxtorem(margin-bottom, px($base-line-height/4) ); /* 3 */
+			@include pxtorem(text-indent, px($base-line-height) ) /* 4 */
 
 		}
 	}
@@ -47,7 +46,6 @@ article {
         }
 		/* Paragraph style on fixed article width */
  		p {
-			
 			@include pxtorem(max-width, $article-width-value );
 			/* make paragraph center of container*/
 			@if $center-article-paragraph == true {
@@ -62,15 +60,17 @@ article {
         
         /* List style on fixed article width */
  		ul,
- 		ol  {
-			@include pxtorem(max-width, ($article-width-value - 32));
+ 		ol,
+ 		dl  {
+ 			 margin-top: 0;
+			 @include pxtorem(max-width, ($article-width-value - 32));
 
 			/* make paragraph center of container*/
 			@if $center-article-paragraph == true {
 					margin-left: auto; 
 					margin-right: auto;
 					
-					@include breakpoint(baby-bear){padding: 0px 1.618rem 0px 1.618rem*2;
+					@include breakpoint(baby-bear){padding: 0 1.618rem 0 1.618rem*2;
 				}
 			}
 		}

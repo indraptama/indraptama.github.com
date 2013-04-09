@@ -10,9 +10,15 @@
  
 /* px to rem function */
 @function rem($inpx) {
-	@return $inpx / $base-font-size * 1rem;
+	@return ($inpx / $base-font-size) * 1rem;
 }
+
 /* px to em function */
 @function em($inpx) {
 	@return ($inpx / $base-font-size) * 1em;
+}
+
+/* convert rem to px */
+@function px($inpx) {
+	@return ($inpx * $base-font-size);
 }

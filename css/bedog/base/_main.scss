@@ -1,24 +1,48 @@
 /**
- * Main Setting
+ * Enable Global Box-sizing
  */
-body {
-	background: $white-dot-bg repeat;
-	font-family: $base-font-family;
-	text-rendering: optimizeLegibility;
+
+* {
+    @include vendor-prefix(box-sizing, border-box);
 }
 
+/**
+ *
+ * Responsive Text [-IV1A]
+ *
+ * If you set use_responsive text = true, body text size will
+ * incerease in certain break point
+ */
+@if $use_responsive_text == true {
+    html {
+    @include breakpoint(baby-bear) {
+            font-size: 95%;
+        };
+    @include breakpoint(brother-bear) {
+            font-size: 100%;
+        };
+    @include breakpoint(mama-bear) {
+            font-size: 110%;
+        };
+    @include breakpoint(papa-bear) {
+            font-size: 125%;
+        };
+    }
 
-html {
-@include breakpoint(baby-bear) {
-		font-size: 95%;
-	};
-@include breakpoint(brother-bear) {
-		font-size: 100%;
-	};
-@include breakpoint(mama-bear) {
-		font-size: 110%;
-	};
-@include breakpoint(papa-bear) {
-		font-size: 125%;
-	};
+} // End if
+
+
+
+/**
+ *
+ *  Body Setting [-IV1B]
+ *
+ * [1] Set default body background.
+ * [2] Set default font family
+ * [3] Set text-rendering to for better kerning
+ */
+body {
+    background: $white-dot-bg repeat; /* 1 */
+    font-family: $base-font-family; /* 2 */
+    text-rendering: optimizeLegibility; /* 3 */
 }
