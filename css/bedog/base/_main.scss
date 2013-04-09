@@ -7,6 +7,18 @@
 }
 
 /**
+ * SIte Background
+ *
+ * [1] Set default body background.
+ * [2] Set Background repeat.
+ */
+ html {
+	background: $site-base-bg; /* 1 */
+    background-repeat: $bg-repeat; /* 2 */;
+ }
+
+
+/**
  *
  * Responsive Text [-IV1A]
  *
@@ -34,17 +46,12 @@
 
 
 /**
- *
  *  Body Setting [-IV1B]
  *
- * [1] Set default body background.
- * [2] Set Background repeat.
- * [3] Set default font family.
- * [4] Set text-rendering to for better kerning.
+ * [1] Set default font family.
+ * [2] Set text-rendering to for better kerning.
  */
 body {
-    background: $site-base-bg; /* 1 */
-    background-repeat: $bg-repeat; /* 2 */
     font-family: $base-font-family; /* 3 */
     text-rendering: optimizeLegibility; /* 4 */
     padding: 0;

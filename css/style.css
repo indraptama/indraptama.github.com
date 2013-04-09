@@ -254,6 +254,19 @@
 }
 
 /**
+ * SIte Background
+ *
+ * [1] Set default body background.
+ * [2] Set Background repeat.
+ */
+html {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+  /* 1 */
+  background-repeat: repeat;
+  /* 2 */
+}
+
+/**
  *
  * Responsive Text [-IV1A]
  *
@@ -261,19 +274,12 @@
  * incerease in certain break point
  */
 /**
- *
  *  Body Setting [-IV1B]
  *
- * [1] Set default body background.
- * [2] Set Background repeat.
- * [3] Set default font family.
- * [4] Set text-rendering to for better kerning.
+ * [1] Set default font family.
+ * [2] Set text-rendering to for better kerning.
  */
 body {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
-  /* 1 */
-  background-repeat: repeat;
-  /* 2 */
   font-family: "Open Sans", Georgia, Serif;
   /* 3 */
   text-rendering: optimizeLegibility;
