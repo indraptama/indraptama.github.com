@@ -280,7 +280,7 @@ html {
  * [2] Set text-rendering to for better kerning.
  */
 body {
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
   /* 3 */
   text-rendering: optimizeLegibility;
   /* 4 */
