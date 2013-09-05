@@ -13,7 +13,23 @@
  */
 
 
-@mixin pxtorem($property, $value) {
-	#{$property} : $value * 1px;
-	#{$property} : ($value / $base-font-size) * 1rem;
-}
+ @mixin pxtorem($property, $in-value) {
+	
+ 	$out-value:($in-value / $base-font-size)* 1rem;
+ 	/* Old browser */
+ 	#{$property}: $in-value;
+ 	/* Modern Browser */
+ 	#{$property}: $out-value;
+ }
+
+ @mixin remtopx($property, $in-value) {
+
+ $number: $in-value;
+ $out-value : strip-units($in-value) * $base-font-size;
+
+ /* Old browser */
+ #{$property} : $out-value;
+
+ /* Modern Browser */
+ #{$property} : $in-value;
+ }

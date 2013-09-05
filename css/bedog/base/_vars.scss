@@ -8,8 +8,8 @@
  */
     $base-font-family : "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
     $heading-font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
-    $base-font-size : 16; //in PX
-    $second-base-font-size : 13; //in PX for modular scale important number
+    $base-font-size : 16px; //in PX
+    $second-base-font-size : 13px; //in PX for modular scale important number
     $base-font-size-percent : 100; // in percent
     $base-line-height : 1.6182;
     
@@ -26,7 +26,7 @@
 	$lock-article-width : false;
 
 	/* if you set paragraph width true, then set paragraph max-width in px unit*/
-	$article-width-value: 550; //in px 
+	$article-width-value: 550px; //in px 
 
 	/* Make article Paragraph always center of container */
 	$center-article-paragraph: true!default;
@@ -54,10 +54,10 @@
 /**
  *  Setting Media Queries Breakpoint
  */
-    $small-breakpoint: 480; /* baby bear : 480px*/
-    $medium-breakpoint: 768; /* brother bear: */
-    $large-breakpoint: 1140; /* mama Bear */
-    $xlarge-breakpoint: 1440; /* papa Bear */
+    $small-breakpoint: 480px; /* baby bear : 480px*/
+    $medium-breakpoint: 768px; /* brother bear: */
+    $large-breakpoint: 1140px; /* mama Bear */
+    $xlarge-breakpoint: 1440px; /* papa Bear */
 
 
     $base-spacing-unit: $base-line-height * $base-font-size; /* in px  */

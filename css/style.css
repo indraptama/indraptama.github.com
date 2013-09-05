@@ -1,593 +1,81 @@
-/* 
- * ------------------------------------
- *     Bedog
- *     By. Indra Pratama Putra
- *     http://indraptama.github.io/bedog; 
- *     Casecading StyleSheets
- * ------------------------------------ */
-/* 
- * ---- Table Of Content ----
- * 
- * * INTRODUCTION
- *     A. B.E.M methodology for naming
- *     B. OOCSS Principles
- *     C. Sass
- *     D. Browser Compability
- *     E. Source Order
- *     F. Style Usage
- *     G. Credits
- *     H. License
- * 
- * I. DEFINITIONS AND VARIABLES SETTINGS .......... [-I]
- *     A. Color Definitions ....................... [-IA]
- *        1. Monochrome Color ..................... [-IA1]
- *        2. Red Based / Dominant Color ........... [-IA2]
- *        3. Yellow Based / Dominant Color ........ [-IA3]
- *        4. Blue Based / Dominant Color .......... [-IA4]
- *        5. Company / Your Main Color ............ [-IA5]
- *
- *     B. Style Variables Settings ................ [-IB]
- * 
- * II. FUNCTIONS AND MIXINS ....................... [-II]
- *     A. Sass Function ........................... [-IIA]
- *        1. px to rem and rem converter .......... [-IIA1]
- *     B. Sass Mixins ............................. [-IIB]
- * 
- * III. VENDOR IMPORTS ............................ [-III]
- *     A. Normalize.css as default reset
- *     B. Typeplate as default typographic style
- *     C. Csswizardry-Grids
- *     D. Beautons	
- * 
- * end */
-/* 
- * ------------------------------------
- *  * INTRODUCTION
- * ------------------------------------
- * 
- * A. B.E.M Naming Style
- *     http://www.bem.info;
- *     This style will use BEM (Block, Element, Modifer)
- *     naming style.
- * 
- * B. OOCSS Principles
- * 
- * C. Sass
- * 
- * D. Source Order
- * E. Style Usage
- * F. Credits */
-/* G. License
- *    
- *    1. Normalize.css v.2.1.0
- *       by Nicolas Gallagher
- *       Licensed under MIT license
- *       url: git.io/normalize;
- *
- *    2. Csswizardry-grids
- *       by Harry Roberts
- *       Licensed under the Apache License, Version 2.0
- *       url: https://github.com/csswizardry/csswizardry-grids
- *
- *    3. beautons
- *       by Harry Roberts
- *       Licensed under the Apache License, Version 2.0
- *       url: https://github.com/csswizardry/beautons
- *
- *    4. typeplate
- *       Zachary Kain (@zakkain) & Dennis Gaebel (@gryghostvisuals)
- *       Licensed under Creative Commmons (http://creativecommons.org/licenses/by/3.0)
- *       url: http://typeplate.com;
--*/
-/* -------------------------------------------
- *  I. DEFINITIONS AND VARIABLES SETTINGS [-I] 
- * ------------------------------------------- */
 /*
- * A. Color Definitions [-IA]
- *-------------------------------*/
-/*
- * 1. Monochrome Color [-IA1]
- */
-/*
- * 2. Red Based / Dominant Color [-IA2]
- */
-/*
- * 3. Yellow Based / Dominant Color [-IA3]
- */
-/*
- * 4. Blue Based / Dominant Color [-IA4]
- */
-/* 
- * 5. Company Color / Your Main Color [-IA5]
- */
-/*------------------------------------*\
-	SVG Pattern
-/*------------------------------------*\
-/**
- * by  : Philip Rogers;
- * url : http://philbit.com/svgpatterns;
- */
-/**
- * White Carbon
- * url : http://codepen.io/progers/pen/dhvim;
- */
-/**
- * White Dot
- * http://codepen.io/progers/pen/pmGrg
- */
-/**
-* Thin Strips
-* http://codepen.io/progers/pen/mGcLz
+Syntax error: 1rem/px isn't a valid CSS value.
+        on line 22 of bedog/func-mixin/_pxtorem-m.scss, in `pxtorem'
+        from line 11 of bedog/base/_headings.scss
+        from line 128 of style.scss
+
+17:  *     F. Style Usage
+18:  *     G. Credits
+19:  *     H. License
+20:  * 
+21:  * I. DEFINITIONS AND VARIABLES SETTINGS .......... [-I]
+22:  *     A. Color Definitions ....................... [-IA]
+23:  *        1. Monochrome Color ..................... [-IA1]
+24:  *        2. Red Based / Dominant Color ........... [-IA2]
+25:  *        3. Yellow Based / Dominant Color ........ [-IA3]
+26:  *        4. Blue Based / Dominant Color .......... [-IA4]
+27:  *        5. Company / Your Main Color ............ [-IA5]
+
+Backtrace:
+bedog/func-mixin/_pxtorem-m.scss:22:in `pxtorem'
+bedog/base/_headings.scss:11
+style.scss:128
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/script/number.rb:266:in `to_s'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:299:in `visit_prop'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `map'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:70:in `perform_arguments'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/indra/.rvm/gems/ruby-1.9.3-p362/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
-/* B. Style Variables Settings [-IA]
-*-----------------------------------*/
-/*
- * 1. Typographic / Typelate Variables [-IA1]
- */
-/* use responsive text */
-/* Font color */
-/* Use paragraph width lock? */
-/* if you set paragraph width true, then set paragraph max-width in px unit*/
-/* Make article Paragraph always center of container */
-/**
- *  Link Color
- * 
- */
-/**
- * Site background setting
- *
- * [1] Set background color or image, see extra/_svg-bg.scss
- * [2] Set background repeat type.
- *     Choice : repeat, repeat-x, repeat-y, none; 
- */
-/* 1 */
-/* 2 */
-/**
- *  Setting Media Queries Breakpoint
- */
-/* baby bear : 480px*/
-/* brother bear: */
-/* mama Bear */
-/* papa Bear */
-/* in px  */
-/* in px */
-/* ------------------------------------*\
- *	II.  MIXINS AND FUNCTIONS [-II]
-/* ------------------------------------ */
-/* -------------------------------------------
- *  I. PX to Rem and Em Converter [-IIA1]
- * ------------------------------------------- */
-/*
- * this function will convert px units to em or rem units
- * Usage :
- * font-size : rem(16); --> for convert px to rem
- * font-size : em(16);  --> for convert px to em
- */
-/* px to rem function */
-/* px to em function */
-/* convert rem to px */
-/*----------------------------------------------------*\
- *  PX to REM Calculation with fallback [-IIB1]
-/*----------------------------------------------------*\
-/**
- * This mixin will convert px measure unit to rem
- * and will add px fallback
- * Usage :
- * @include pxtorem(font-size, 18);
- *
- * result :
- * font-size : 16px;
- * font-size : 1rem; 
- */
-/**
- * Modular Scale
- * url : modularscale.com;
- * mixin bourbon.io
- */
-/*------------------------------------*\
- *  Vendor Prefix
-/*------------------------------------*\
-/**
- * This mixin will add vendor prefix
- * example :
- * @inlcude prefix(hyphens, 0px 0px 25px 3px);
- */
-/*------------------------------------*\
- *  Clearfix Mixin
-/*------------------------------------*\
- * Example usage :
- * .widget {@include clearfix;};
- */
-/*
- * Clearfix: contain floats [-VIIA]
- * 
- * This clearfix class intend to use in html page.
- * dont @extend this class, if you want use clearfix inside class
- * use mixin clearfix instead.
- * For modern browsers
- *
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1;
-}
-
-/* Convert all breakpoint in px unit to breakpoint in em unit  */
-/* Mixin Definitions */
-/* Mixin */
-/* -------------------------------------------
- *  III. VENDOR IMPORTS [-III] 
- * ------------------------------------------- */
-/* -------------------------------------------
- *  IV. BASE STYLE [-IV] 
- * ------------------------------------------- */
-/**
- * Enable Global Box-sizing
- */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/**
- * SIte Background
- *
- * [1] Set default body background.
- * [2] Set Background repeat.
- */
-html {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
-  /* 1 */
-  background-repeat: repeat;
-  /* 2 */
-}
-
-/**
- *
- * Responsive Text [-IV1A]
- *
- * If you set use_responsive text = true, body text size will
- * incerease in certain break point
- */
-/**
- *  Body Setting [-IV1B]
- *
- * [1] Set default font family.
- * [2] Set text-rendering to for better kerning.
- */
-body {
-  font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
-  /* 3 */
-  text-rendering: optimizeLegibility;
-  /* 4 */
-  padding: 0;
-  margin: 0;
-}
-
-/**
- * Heading Reset
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  line-height: 1;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Sans-Serif;
-  font-weight: 700;
-  letter-spacing: -1px;
-  color: #111111;
-}
-
-/**
- * Heading Size
- * Heading size based on modular scale
- */
-.tera-size {
-  font-size: 109.65642px;
-  font-size: 6.85353rem;
-}
-
-.giga-size {
-  font-size: 89.09584px;
-  font-size: 5.56849rem;
-}
-
-.mega-size {
-  font-size: 67.77282px;
-  font-size: 4.2358rem;
-}
-
-.kilo-size {
-  font-size: 55.06541px;
-  font-size: 3.44159rem;
-}
-
-h1,
-.alpha-size {
-  font-size: 41.88678px;
-  font-size: 2.61792rem;
-}
-
-h2,
-.beta-size {
-  font-size: 34.03301px;
-  font-size: 2.12706rem;
-}
-
-h3,
-.gamma-size {
-  font-size: 25.888px;
-  font-size: 1.618rem;
-}
-
-h4,
-.delta-size {
-  font-size: 21.034px;
-  font-size: 1.31463rem;
-}
-
-h5,
-.base-size,
-.epsilon-size {
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-h6,
-.small,
-.zeta-size {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-
-/**
- *  Link Color
- */
-a {
-  color: #8f83fc;
-  text-decoration: none;
-}
-a:hover {
-  color: #a59cfd;
-  text-decoration: underline;
-}
-a:active {
-  color: #796afb;
-}
-
-/**
- * Flexible Images
- *
- * [1] Set image to fluid
- * [2] Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-img {
-  max-width: 100%;
-  /*  */
-  height: auto;
-  vertical-align: middle;
-  /* 2 */
-}
-
-/**
- * Make image full strecth
- */
-.img--full {
-  width: 100%;
-  overflow: auto;
-}
-
-/**
- * Basic list height styling
- */
-ul,
-ol,
-li,
-dl,
-dt,
-dd {
-  margin-top: 6.4728px;
-  margin-top: 0.40455rem;
-  margin-bottom: 6.4728px;
-  margin-bottom: 0.40455rem;
-}
-
-/**
-* Reset list style
-*/
-.list--reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.list--reset > li {
-  padding: 0;
-  margin: 0;
-}
-
-/**
- * No Bullet list
- *   
- */
-.list--no-bullet {
-  padding-left: 16px;
-  padding-left: 1rem;
-  list-style: none;
-}
-
-/**
- * Nested ordered list in roman 
- * 
- */
-.list--roman {
-  list-style: upper-roman;
-}
-.list--roman ol {
-  list-style: upper-alpha;
-}
-.list--roman ol ol {
-  list-style: decimal;
-}
-.list--roman ol ol ol {
-  list-style: lower-alpha;
-}
-.list--roman ol ol ol ol {
-  list-style: disc;
-}
-.list--roman ol ol ol ol ol {
-  list-style: square;
-}
-
-/**
- *
- * Default Article Styling
- *
- * [1] add Hyphenation to article text
- * [2] remove top & bottom margin on first paragraph
- * [3] add margin-top and margin-bottom start on second paragraph
- * [4]
- */
-article {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-  /* 1 */
-  line-height: 1.6182;
-}
-article p {
-  margin-bottom: 0;
-  /* 2 */
-  margin-top: 0;
-  /* 2 */
-}
-article p + p {
-  margin-top: 6.4728px;
-  margin-top: 0.40455rem;
-  /* 3 */
-  margin-bottom: 6.4728px;
-  margin-bottom: 0.40455rem;
-  /* 3 */
-  text-indent: 25.8912px;
-  text-indent: 1.6182rem;
-}
-
-/**
- * Fixed article Width 
- */
-/**
- * 1. Typography Reset 
- */
-/*
- * 2. Article paragraph style
- */
-/**
- * 3. Paragraph width 
- */
-/**
- * 4. Lead Paragraph
- *    - Make first paragraph slightly bigger
- */
-.lead {
-  font-size: 17.168px;
-  font-size: 1.073rem;
-}
-
-/* -------------------------------------------
- *  VII. OBJECT CLASS [-VII] 
- * ------------------------------------------- */
-/**
- *   Buttons
- *	 Based on suit-button by Nicolas Gallagher
- *	 url: https://github.com/necolas/suit-button/
- */
-/**
- * The button classes are best applied to links, buttons, and submit inputs.
- * These components can be used in forms, as calls to action, or as part of the
- * general UI of the site/app.
- *
- * Recommended use:
- *
- * <a class="Button [Button--modifier]" role="button" href="[url]">Button text</a>
- * <button class="Button [Button--modifier]" type="submit">Button text</button>
- * <input class="Button [Button--modifier]" type="submit" value="Button text">
- */
-/**
- * Button template
- *
- * Build on this component using rulesets in your application-level CSS.
- *
- * 1. Normalize `box-sizing` across all elements that this component could be
- *    applied to.
- * 2. Inherit text color from ancestor.
- * 3. Inherit font styles from ancestor.
- * 4. Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+.
- * 5. Prevent wrapping across multiple lines.
- * 6. Corrects inability to style clickable `input` types in iOS
- * 7. Remove text underline on link
- * 8. Remove excess padding and border in Firefox 4+
- */
-.button {
-  position: relative;
-  -moz-box-sizing: border-box;
-  /* 1 */
-  box-sizing: border-box;
-  /* 1 */
-  display: inline-block;
-  padding: 0.4em 0.75em;
-  border: 1px solid;
-  margin: 0;
-  background: transparent;
-  color: inherit;
-  /* 2 */
-  cursor: pointer;
-  font: inherit;
-  /* 3 */
-  line-height: normal;
-  /* 4 */
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  /* 5 */
-  -webkit-appearance: none;
-  /* 6 */
-}
-.button:hover, .button:focus, .button:active {
-  text-decoration: none;
-}
-.button::-moz-focus-inner {
-  border: 0;
-  /* 8 */
-  padding: 0;
-  /* 8 */
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: 1rem/px isn't a valid CSS value.\A         on line 22 of bedog/func-mixin/_pxtorem-m.scss, in `pxtorem'\A         from line 11 of bedog/base/_headings.scss\A         from line 128 of style.scss\A \A 17:  *     F. Style Usage\A 18:  *     G. Credits\A 19:  *     H. License\A 20:  * \A 21:  * I. DEFINITIONS AND VARIABLES SETTINGS .......... [-I]\A 22:  *     A. Color Definitions ....................... [-IA]\A 23:  *        1. Monochrome Color ..................... [-IA1]\A 24:  *        2. Red Based / Dominant Color ........... [-IA2]\A 25:  *        3. Yellow Based / Dominant Color ........ [-IA3]\A 26:  *        4. Blue Based / Dominant Color .......... [-IA4]\A 27:  *        5. Company / Your Main Color ............ [-IA5]"; }

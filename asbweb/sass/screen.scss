@@ -1,0 +1,115 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "bourbon";
+@import "flexbox";
+
+
+@import "jagra-fw/mixin";
+@import "jagra-fw/reset";
+@import "jagra-fw/button";
+
+$base-font-size: 16;
+
+%dot-pattern {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+}
+
+%dot-pattern-big {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALUlEQVQYV2NkYGD4D8QgwAilUSiQIEEF2DTCxbAai6wDmwIUK8lSgOELvI4EAKuqBAkAwt/nAAAAAElFTkSuQmCC);
+}
+
+
+
+
+
+/**
+ * START ADD COSTUM CLASS
+ */
+
+ html {
+    font-family: 'Open Sans', sans-serif;
+    @include bp(baby-bear) {
+        font-size: 87.5%;
+        line-height: 1.3;
+    }
+    
+ }
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    @include pxtorem(font-size,24);
+}
+
+ p {
+    @include pxtorem(font-size,16);
+    @include pxtorem(margin-bottom, 16);
+ }
+
+
+/**
+ * Main Content Behavior
+ */ 
+
+
+
+ .main {
+    position: absolute;
+    width: 100%;
+    height: 117%;
+    overflow-y: hidden;
+    //test-purpose only
+    background: orange;
+
+ }
+
+.full-screen-slide {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+
+
+.full-screen-slide__container {
+    @include display-flex;
+    @include flex-wrap(no-wrap);
+    @include flex-direction(row);
+    @include align-content(stretch);
+    @include align-items(stretch);
+   
+    
+    
+    & > section {
+        width: 90%;
+    }
+}
+
+.section__content {
+    min-height: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 10000px;
+    //margin-bottom: -10000px;
+}
+
+.has-scroll {
+    overflow-y: auto;
+    height: 300px;
+}
+
+
+
+
+ .text-white {
+    color: #fff!important;
+ }

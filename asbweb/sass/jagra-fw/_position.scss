@@ -1,0 +1,30 @@
+/**
+ * Absolute Center with inlin-block
+ * 
+ * Absolute Center vertical and Horizontal using inline-block
+ * Must Use height on pixel (absCenter__container)
+ */
+
+
+/**
+ * 
+ */
+
+.absCenter__container {
+ 	text-align: center; /* [1] */
+ 	margin:0;
+ 	&:before {
+ 		content: "";
+ 		display: inline-block; /* [] */
+ 		height: 100%; /* [] */
+ 		vertical-align: middle;
+ 		margin-right: -.25em;
+ 	}	
+ }
+
+	 .absCenter__item {
+	 	display: inline-block;
+	 	vertical-align: middle;
+	 	max-width: 30em;
+	 	padding: 1em;
+	 }
