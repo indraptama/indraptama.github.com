@@ -1,0 +1,139 @@
+/**
+ * Typography
+ */
+
+
+/**
+ * Basic Typography Style
+ */
+
+@include establish-baseline;
+
+html {
+
+    @include bp(baby-bear) {
+        font-size: 87.5%;
+    }
+
+    @include bp(papa-bear) {
+        font-size: 110%;
+        
+    }
+
+}
+
+body {
+    font-family: $base-font-family;
+    font-weight: 300;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    //word-wrap: break-word;
+    color: #444444;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $heading-font-family;
+    color: inherit;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -o-hyphens: none;
+    hyphens: none;
+}
+
+/**
+ * Base Typography Scale
+ */
+
+.giga {
+    @include adjust-font-size-to(89.095px);
+    @include margin-trailer(1,89.095px);
+}
+
+.mega {
+    @include adjust-font-size-to(67.773px);
+    @include margin-trailer(1,67.773px);
+}
+
+.kilo {
+    @include adjust-font-size-to(55.065px);
+    @include margin-trailer(1,55.065px);
+}
+
+h1,
+.alpha {
+    @include adjust-font-size-to(41.887px);
+    @include margin-trailer(1,41.887px);
+}
+
+h2,
+.beta {
+    @include adjust-font-size-to(34.033px);
+    @include margin-trailer(1,34.033px);
+}
+
+h3,
+.gamma {
+    @include adjust-font-size-to(25.888px);
+    @include margin-trailer(2,25.888px);
+}
+
+h4,
+.delta {
+    @include adjust-font-size-to(21.034px);
+    @include margin-trailer(1,21.034px);
+}
+
+h5,
+.epsilon {
+    @include adjust-font-size-to(16px);
+    @include margin-trailer();
+}
+
+h6,
+.zeta {
+    @include adjust-font-size-to(13px);
+    @include margin-trailer(1,13px);
+}
+
+.small {
+
+}
+
+.mini {
+
+}
+
+
+
+
+p {
+    @include adjust-font-size-to(16px);
+    @include margin-trailer();
+
+    & + p {
+        //@include margin-leader(-1);
+        //text-indent: 2em;
+    }
+
+    & + ul,
+    & + ol {
+         //@include margin-leader(-1);
+    }
+}
+
+
+/**
+ * Slogan
+ */
+
+ .slogan {
+    font-family: $base-font-family;
+    font-weight: 300;
+    font-style: italic;
+ }

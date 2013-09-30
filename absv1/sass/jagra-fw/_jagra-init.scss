@@ -1,0 +1,60 @@
+/* ==========================================================================
+    $ Jagra Framework by. Indra Pratama Putra
+   ========================================================================== */
+
+/**
+ * Jagra is small boilerplate on top html5Boilerplate and Compass
+ */
+
+// Jagra-Setting
+// import compass css3
+	@import "compass/css3";
+	
+// Import Compass Vertical Rhytm
+	@import "compass/typography/vertical_rhythm";
+	// Set Basic setup for compass vertical rhythm
+	$base-font-size: 16px;
+	$base-font-size-px: 16;
+	$base-line-height: 26px;
+
+
+// Set jagra Basic Setup
+$base-font-family: "Open Sans", "Segoe WP", "Segoe UI", "Helvetica Neue", Helvetica, "Trebuchet MS", Arial, Sans-serif;
+$heading-font-family: $base-font-family;
+$secondary-font-family: "Roboto", "Segoe WP", "Segoe UI", "Helvetica Neue", Helvetica, "Trebuchet MS", Arial, Sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+// Import Jagra Mixin and Function
+	@import "mixin";
+
+// Import Small Normalize Reset
+	@import "reset";
+
+
+// import typography
+	@import "typo";
+
+
+// import Images
+	@import "images";
+
+
+// import Navigation class
+	@import "nav";
+
+// import grid
+	@import "grid";
+
+// Import Helper 
+	@import "helper";
+

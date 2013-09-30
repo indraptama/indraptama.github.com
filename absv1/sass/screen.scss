@@ -1,0 +1,205 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+
+// @import Jagra Frameworks
+	@import "jagra-fw/jagra-init";
+
+html {
+	@include debug-vertical-alignment();
+}
+
+.wrapper {
+	max-width: 1140px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p {
+	
+}
+
+
+/* ==========================================================================
+    $ THEME
+   ========================================================================== */
+
+
+/**
+ * HTML 5 Element basic styling
+ */
+body {
+	@include padding-leader(3,16px);
+}
+
+
+/**
+ * Remove last element margin-bottom inside <section>
+ */
+
+
+ section {
+ 	@include padding-leader(3,16px) ;
+ 	@include padding-trailer(3,16px) ;
+  	>*:last-child {margin-bottom: 0;}
+ }
+
+
+
+/**
+ * HEADER
+ */
+ .main-header {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	right: 0;
+ 	width: 100%;
+ 	height: rhythm(3,16px);
+ 	border-bottom: 1px solid orange;
+ 	background:#ecf0f1;
+ 	z-index: 9999;
+ }
+
+ .header__logo {
+ 	width: rhythm(3,16px);
+ 	height: rhythm(3,16px);
+ 	background:orange;
+	float: left;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	
+	&:hover {
+		background:salmon;
+	}
+ }
+
+ .main__nav {
+ 	ul {
+ 		height: rhythm(3,16px);
+ 	}
+
+ 	a {
+ 		@include padding-leader();
+ 		@include padding-trailer();
+ 		padding-left: 1em;
+ 		padding-right: 1em;
+
+ 		&:hover {background:red;}
+ 	}
+ }
+
+
+.section__title {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	z-index: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: rhythm(-.5,25.888px);
+		left: 0;
+		right: 0;
+		
+		display: block;
+		width: rhythm(3,25.888px);
+		height: rhythm(3,25.888px);
+		margin: 0 auto;
+		background:red;
+		z-index: -1;
+	}
+}
+
+/**
+ * Hero 
+ */
+
+.hero {
+	@include padding-leader(4,16px);
+ 	@include padding-trailer(4,16px);
+ 	background-color: orange;
+ 	//color: white;
+
+ 	.slogan {
+ 		//display: inline;
+ 		font-style: normal;
+ 		//background:#fcfcfc;
+ 		color: #222;
+ 		padding-left: .1em;
+ 		padding-right: .1em;
+ 		margin-bottom: 0;
+ 	}
+}
+
+
+
+
+/**
+ * H Card
+ */
+.h-card {
+	background:rgba(#2c3e50, 1);
+	color: #fcfcfc;
+	@include padding-leader(2,16px);
+ 	@include padding-trailer(2,16px);
+}
+
+.ratio--one-half {
+	padding-bottom: rhythm(7,16px)
+}
+/**
+ * Background
+ */
+
+ .bg--officeorange {
+ 	background:url("bg/office-orange.jpg") no-repeat center center;
+ 	-webkit-background-size: cover;
+ 	background-size: cover;
+ }
+
+ .bg--silver {
+ 	background-color: #ecf0f1;
+ }
+
+ .bg--darkblue {
+ 	background-color: #2c3e50;
+ }
+
+.bg--emerald {
+	background-color: #27ae60;
+}
+
+/**
+ * Thumbnail
+ */
+
+.icon {
+	@include inline-block;
+	height: rhythm(2,16px);
+	width: rhythm(2,16px);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.icon--big {
+	height: rhythm(5,16px);
+	width: rhythm(5,16px);
+}
+
+.thumb--neonbox {
+	background-image: url("icon/neonbox.svg");
+}
+
