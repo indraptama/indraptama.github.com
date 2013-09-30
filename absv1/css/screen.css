@@ -103,7 +103,7 @@ hgroup > *:last-child {
 /**
  * Basic Typography Style
  */
-/* line 105, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 105, ../../../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
   line-height: 1.625em;
@@ -1028,5 +1028,25 @@ section > *:last-child {
 
 /* line 202, ../sass/screen.scss */
 .thumb--neonbox {
-  background-image: url("icon/neonbox.svg");
+  background-image: url("icon/neonboxs.svg");
+}
+
+/* line 204, ../sass/screen.scss */
+.thumb--huruftimbul {
+  background-image: url("icon/huruftimbul.svg");
+}
+
+/* line 205, ../sass/screen.scss */
+.thumb--plang {
+  background-image: url("icon/plangtoko.svg");
+}
+
+/* line 206, ../sass/screen.scss */
+.thumb--konstruksi {
+  background-image: url("icon/konstruksi.svg");
+}
+
+/* line 207, ../sass/screen.scss */
+.thumb--banner {
+  background-image: url("icon/banner.svg");
 }
