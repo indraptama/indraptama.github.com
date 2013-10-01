@@ -824,19 +824,6 @@ nav a {
   *zoom: 1;
 }
 
-/* line 11, ../sass/screen.scss */
-html {
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.625em;
-  -moz-background-size: 100% 1.625em;
-  -o-background-size: 100% 1.625em;
-  background-size: 100% 1.625em;
-  background-position: left top;
-}
-
 /* line 15, ../sass/screen.scss */
 .wrapper {
   max-width: 1140px;
@@ -1027,26 +1014,33 @@ section > *:last-child {
 }
 
 /* line 202, ../sass/screen.scss */
+.icon--block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 208, ../sass/screen.scss */
 .thumb--neonbox {
   background-image: url("icon/neonboxs.svg");
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .thumb--huruftimbul {
   background-image: url("icon/huruftimbul.svg");
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .thumb--plang {
   background-image: url("icon/plangtoko.svg");
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .thumb--konstruksi {
   background-image: url("icon/konstruksi.svg");
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .thumb--banner {
   background-image: url("icon/banner.svg");
 }

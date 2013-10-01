@@ -9,7 +9,7 @@
 	@import "jagra-fw/jagra-init";
 
 html {
-	@include debug-vertical-alignment();
+	//@include debug-vertical-alignment();
 }
 
 .wrapper {
@@ -197,6 +197,12 @@ body {
 .icon--big {
 	height: rhythm(5,16px);
 	width: rhythm(5,16px);
+}
+
+.icon--block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
 .thumb--neonbox {background-image: url("icon/neonboxs.svg");}
