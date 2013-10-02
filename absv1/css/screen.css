@@ -728,8 +728,8 @@ nav a {
 
 /* line 69, ../sass/jagra-fw/_helper.scss */
 .pad-side {
-  padding-right: !important;
-  padding-left: !important;
+  padding-right: 26px !important;
+  padding-left: 26px !important;
 }
 
 /* line 70, ../sass/jagra-fw/_helper.scss */
@@ -824,12 +824,30 @@ nav a {
   *zoom: 1;
 }
 
+/* line 11, ../sass/screen.scss */
+html {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -webkit-background-size: 100% 1.625em;
+  -moz-background-size: 100% 1.625em;
+  -o-background-size: 100% 1.625em;
+  background-size: 100% 1.625em;
+  background-position: left top;
+}
+
 /* line 15, ../sass/screen.scss */
 .wrapper {
-  max-width: 1140px;
+  max-width: 72em;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 22, ../sass/screen.scss */
+.wrapper--small {
+  max-width: 40em !important;
 }
 
 /* ==========================================================================
@@ -838,7 +856,7 @@ nav a {
 /**
  * HTML 5 Element basic styling
  */
-/* line 34, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 body {
   padding-top: 4.875em;
 }
@@ -846,12 +864,12 @@ body {
 /**
  * Remove last element margin-bottom inside <section>
  */
-/* line 44, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 section {
   padding-top: 4.875em;
   padding-bottom: 4.875em;
 }
-/* line 47, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 section > *:last-child {
   margin-bottom: 0;
 }
@@ -859,7 +877,7 @@ section > *:last-child {
 /**
  * HEADER
  */
-/* line 55, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .main-header {
   position: fixed;
   top: 0;
@@ -872,7 +890,7 @@ section > *:last-child {
   z-index: 9999;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .header__logo {
   width: 4.875em;
   height: 4.875em;
@@ -884,28 +902,28 @@ section > *:last-child {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 79, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .header__logo:hover {
   background: salmon;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .main__nav ul {
   height: 4.875em;
 }
-/* line 89, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .main__nav a {
   padding-top: 1.625em;
   padding-bottom: 1.625em;
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 95, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .main__nav a:hover {
   background: red;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .section__title {
   display: block;
   position: relative;
@@ -914,7 +932,7 @@ section > *:last-child {
   text-align: center;
   z-index: 0;
 }
-/* line 108, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .section__title:before {
   content: "";
   position: absolute;
@@ -932,13 +950,13 @@ section > *:last-child {
 /**
  * Hero 
  */
-/* line 128, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .hero {
   padding-top: 6.5em;
   padding-bottom: 6.5em;
   background-color: orange;
 }
-/* line 134, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .hero .slogan {
   font-style: normal;
   color: #222;
@@ -950,7 +968,7 @@ section > *:last-child {
 /**
  * H Card
  */
-/* line 151, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .h-card {
   background: #2c3e50;
   color: #fcfcfc;
@@ -958,7 +976,7 @@ section > *:last-child {
   padding-bottom: 3.25em;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .ratio--one-half {
   padding-bottom: 11.375em;
 }
@@ -966,24 +984,28 @@ section > *:last-child {
 /**
  * Background
  */
-/* line 165, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .bg--officeorange {
   background: url("bg/office-orange.jpg") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .bg--silver {
   background-color: #ecf0f1;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .bg--darkblue {
   background-color: #2c3e50;
 }
+/* line 182, ../sass/screen.scss */
+.bg--darkblue a {
+  color: #fcfcfc;
+}
 
-/* line 179, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .bg--emerald {
   background-color: #27ae60;
 }
@@ -991,7 +1013,7 @@ section > *:last-child {
 /**
  * Thumbnail
  */
-/* line 187, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .icon {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1007,40 +1029,40 @@ section > *:last-child {
   background-repeat: no-repeat;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .icon--big {
   height: 8.125em;
   width: 8.125em;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .icon--block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .thumb--neonbox {
   background-image: url("icon/neonboxs.svg");
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .thumb--huruftimbul {
   background-image: url("icon/huruftimbul.svg");
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .thumb--plang {
   background-image: url("icon/plangtoko.svg");
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .thumb--konstruksi {
   background-image: url("icon/konstruksi.svg");
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .thumb--banner {
   background-image: url("icon/banner.svg");
 }
