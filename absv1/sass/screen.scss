@@ -9,7 +9,7 @@
 	@import "jagra-fw/jagra-init";
 
 html {
-	@include debug-vertical-alignment();
+	//@include debug-vertical-alignment();
 }
 
 .wrapper {
@@ -217,3 +217,65 @@ body {
 .thumb--plang {background-image: url("icon/plangtoko.svg");}
 .thumb--konstruksi {background-image: url("icon/konstruksi.svg");}
 .thumb--banner {background-image: url("icon/banner.svg");}
+
+
+
+/* ==========================================================================
+    $ Masonry Grid
+   ========================================================================== */
+.masonry__grid {
+
+	 @include bp(mama-bear) {
+	 	-moz-column-count:4;
+	    -moz-column-gap: 0%;
+	    -moz-column-width: 20%;
+	    -webkit-column-count:4;
+	    -webkit-column-gap: 3%;
+	    -webkit-column-width: 20%;
+	    column-count: 4;
+	    column-gap: 3%;
+	    column-width: 20%;
+	}
+
+}
+
+.masonry__item {
+	display: block;
+	background:#2ecc71;
+	//padding: rhythm(.5,16px);
+	margin-bottom: rhythm(.5,16px);
+	box-shadow: 0px 1px 3px darken(#2c3e50, 10%);
+}
+
+// Masonry Item Number
+.masonry__item_1 {
+
+}
+
+.masonry__item_2 {
+
+}
+.masonry__item_3,
+.masonry__item_4 {
+	
+}
+
+
+.masonry__item_container {
+
+}
+
+.masonry__item_details {
+	padding: rhythm(.5,16px);
+}
+
+
+.masonry__img {
+	@extend .img-r;
+
+}
+
+
+.link--nostyle {
+	text-decoration: none;
+}

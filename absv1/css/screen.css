@@ -243,7 +243,7 @@ p {
  * Responsive IMages
  */
 /* line 8, ../sass/jagra-fw/_images.scss */
-.img-r, .img__container img {
+.img-r, .img__container img, .masonry__img {
   width: 100%;
   height: auto;
 }
@@ -672,6 +672,11 @@ nav a {
   font-weight: 800 !important;
 }
 
+/* line 34, ../sass/jagra-fw/_helper.scss */
+.text--thin {
+  font-weight: 300 !important;
+}
+
 /**
  * Force text fit in 35em
  */
@@ -699,9 +704,14 @@ nav a {
 /**
  * Margin and Padding Helper
  */
+/* line 59, ../sass/jagra-fw/_helper.scss */
+.flush {
+  margin: 0 !important;
+}
+
 /* line 60, ../sass/jagra-fw/_helper.scss */
 .flush--bottom {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 /* Padding */
@@ -822,19 +832,6 @@ nav a {
 /* line 121, ../sass/jagra-fw/_helper.scss */
 .clearfix {
   *zoom: 1;
-}
-
-/* line 11, ../sass/screen.scss */
-html {
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.625em;
-  -moz-background-size: 100% 1.625em;
-  -o-background-size: 100% 1.625em;
-  background-size: 100% 1.625em;
-  background-position: left top;
 }
 
 /* line 15, ../sass/screen.scss */
@@ -1065,4 +1062,40 @@ section > *:last-child {
 /* line 219, ../sass/screen.scss */
 .thumb--banner {
   background-image: url("icon/banner.svg");
+}
+
+/* ==========================================================================
+    $ Masonry Grid
+   ========================================================================== */
+@media only screen and (min-width: 60em) {
+  /* line 226, ../sass/screen.scss */
+  .masonry__grid {
+    -moz-column-count: 4;
+    -moz-column-gap: 0%;
+    -moz-column-width: 20%;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 20%;
+    column-count: 4;
+    column-gap: 3%;
+    column-width: 20%;
+  }
+}
+
+/* line 242, ../sass/screen.scss */
+.masonry__item {
+  display: block;
+  background: #2ecc71;
+  margin-bottom: 0.8125em;
+  box-shadow: 0px 1px 3px #1a242f;
+}
+
+/* line 268, ../sass/screen.scss */
+.masonry__item_details {
+  padding: 0.8125em;
+}
+
+/* line 279, ../sass/screen.scss */
+.link--nostyle {
+  text-decoration: none;
 }
