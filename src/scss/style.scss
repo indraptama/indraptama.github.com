@@ -1,0 +1,188 @@
+
+$base-line-height: 1.7rem;
+$base-spacing-unit: $base-line-height;
+$half-spacing-unit: $base-spacing-unit/2;
+
+
+$fancy-color : #1abc9c;
+
+@import 'helper/mixin';
+//@import 'base/normalize';
+//@import 'base/reset';
+//@import 'base/h5bp';
+@import 'base/eric-reset';
+
+@import 'base/link';
+@import 'base/list';
+
+
+@import 'module/typo';
+
+
+@import 'partial/page';
+
+
+@import 'helper/h5bp-h';
+@import 'helper/content';
+//@import 'module/grid';
+
+/**
+ * Typography
+ font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+ */
+
+
+body {
+	width: 100%;
+	min-height: 100%;
+	background-color: #f5f5f5;
+}
+
+
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.summary {
+	font-style: italic;
+}
+
+.page-wrapper {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+
+
+
+/**
+ * Avatars
+ */
+.ava {
+	@include ir;
+	display: block;
+	width: $base-spacing-unit*2;
+	height: $base-spacing-unit*2;
+	margin: 0 auto $base-spacing-unit auto;
+	background-image: url(../img/avatar.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	border-radius: 1000px;
+  	text-indent: -99999px;
+  	font-family: ab;
+  	color: transparent;
+}
+
+
+.article-list {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+
+.article-list li {
+	margin-bottom: $base-spacing-unit*2;
+}
+
+.article-list h2,
+.article-list time {
+	text-align: center;
+}
+
+
+.article-list p {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.article__header {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.main-header,
+.main-content,
+.main-footer {
+	padding-left: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+}
+
+.main-header {padding-top: $base-spacing-unit}
+
+.main-content {
+	margin-bottom: $base-spacing-unit*3;
+}
+
+.main-footer {
+	padding-top: $base-spacing-unit;
+	padding-bottom: $base-spacing-unit;
+	font-size: 0.875rem;
+	color: #fcfcfc;
+	background-color: $fancy-color;
+}
+.main-footer a {
+	color: #fcfcfc;
+}
+
+
+@media only screen and (max-width: 35em) {
+	
+	body {
+		font-family: 'Merriweather Sans', sans-serif;
+	}
+
+	.main-header,
+	.main-content,
+	.main-footer {
+		padding-left: $base-spacing-unit*1.5;
+		padding-right: $base-spacing-unit*1.5;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 35em) {
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		font-family: 'Merriweather Sans', sans-serif;
+	}
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+	html {
+		font-size: 110%;
+	}
+
+}
+
+

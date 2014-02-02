@@ -3,14 +3,14 @@ layout: default
 ---
 
 
-<article class="blog__article">
+<article class="blog__article" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="article__header">
-	<time> {{ page.date | date: "%B %e, %Y" }}</time>
-	<h2>{{ page.title }}</h2>
-</div>
+<header class="article__header">
+	<time itemprop="datePublished" datetime="page.date"> {{ page.date | date: "%B %e, %Y" }}</time>
+	<h2 itemprop="headline">{{ page.title }}</h2>
+</header>
 
-<div class="article__content">
+<div class="article__content" itemprop="articleBody">
 	{{ content }}
 </div>
 
