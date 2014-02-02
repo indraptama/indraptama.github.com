@@ -317,6 +317,27 @@ time {
   margin-bottom: 1.7rem;
 }
 
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 0.875rem;
+}
+
+pre {
+  overflow-x: scroll;
+  white-space: pre;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 1.7rem;
+  border-radius: 3px;
+}
+
+code {
+  padding: 0;
+}
+
 /* ==========================================================================
     $ Single Page
     ========================================================================== */
