@@ -1,0 +1,18 @@
+---
+layout: default
+title: This is just a placeholder post
+---
+
+
+<article class="blog__article">
+
+<div class="article__header">
+	<time> {{ page.date | date: "%B %e, %Y" }}</time>
+	<h2>{{ page.title }}</h2>
+</div>
+
+<div class="article__content">
+	{{ content }}
+</div>
+
+</article>
