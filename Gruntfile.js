@@ -68,6 +68,21 @@ module.exports = function(grunt){
           ]
         }
       }
+    },
+
+    copy: {
+      dev: {
+        files: [
+        {
+          expand: true,
+          //cwd: 'app/',
+          filter: 'isFile',
+          flatten: true,
+          src: ['app/css/*'],
+          dest: 'asset/css/'
+        }
+        ],
+      },
     }
 
   });
@@ -78,6 +93,7 @@ module.exports = function(grunt){
       'myth:dev',
       'pixrem',
       'browser_sync',
+      'copy',
       'watch'
 
     ]);

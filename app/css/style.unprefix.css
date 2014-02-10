@@ -334,6 +334,10 @@ font-family: 'Open Sans', sans-serif;
 .article__header {
   text-align: center; }
 
+.ewe {
+  display: none;
+  background-color: red; }
+
 .main-header, .main-content, .main-footer {
   padding-left: 1.7rem;
   padding-right: 1.7rem; }

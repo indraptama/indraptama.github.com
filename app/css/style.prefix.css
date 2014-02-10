@@ -546,6 +546,11 @@ font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
+.ewe {
+  display: none;
+  background-color: red;
+}
+
 .main-header,
 .main-content,
 .main-footer {
