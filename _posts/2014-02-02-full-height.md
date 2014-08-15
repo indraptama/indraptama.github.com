@@ -14,8 +14,8 @@ Simple javascript for making element height strecth to viewport height dynamicly
  * add .full-height class to element
  */
 
-var window.onload = fullHeight;
-var window.onresize = fullHeight;
+window.onload = fullHeight;
+window.onresize = fullHeight;
 
 function fullHeight() {
   var h = window.innerHeight;
