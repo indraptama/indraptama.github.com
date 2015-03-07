@@ -1,4 +1,0 @@
-markdown: rdiscount
-safe: true
-lsi: false
-exclude: [src, app, node_modules, bower.json, package.json, bower.json]
