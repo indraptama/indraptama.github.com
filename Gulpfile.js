@@ -189,6 +189,9 @@ gulp.task('metalsmith', function() {
           },
           pages:{
             pattern: 'pages/*.md'
+          },
+          portfolio:{
+            pattern: 'portfolio/**/*.md'
           }
         }))
         .metadata({
@@ -201,7 +204,8 @@ gulp.task('metalsmith', function() {
         }))
         .use(excerpts())
         .use(permalinks({
-          pattern: ':collection/:title'
+          pattern: ':collection/:title',
+          relative: true
         }))
 
         .use(layout({
