@@ -1,0 +1,12 @@
+extends views/default.jade
+block content
+  main
+    h3 This is List
+    .Container.Container--xlarge
+      .Grid-flex
+        each blog in collections.blogs
+          a.u-linkBlock.u-size1of4(href!=('/'+blog.path))
+            h3!= blog.title
+            p= blog.date
+            img.img-resv(src!=blog.cover, alt="")
+            div!= blog.excerpt

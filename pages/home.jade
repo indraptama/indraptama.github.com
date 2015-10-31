@@ -1,0 +1,16 @@
+extends views/default.jade
+block content
+  main
+    .Container.Container--small.Hero
+      h2.u-textHero.u-fontBold.u-marBot--double The man who fell in love with design & code.
+      p.lede Hallo, I`m Indra Pratama Putra, designer and frontend developer from Bandung Indonesia.
+    .Container.Container--small
+      
+    .Container.Container--full
+      .Grid
+        each post in collections.blogs
+          .Grid-cell.u-md-size1of2.u-lg-size1of4
+            a.FlexEmbed(href!='/'+post.path, target="_blank")
+              .FlexEmbed-ratio.u-bgImgCover(style='background-image: url('+ post.cover+')')
+              .FlexEmbed-content
+                p= post.title

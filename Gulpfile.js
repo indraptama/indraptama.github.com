@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-//var uncss = require('gulp-uncss');
+var uncss = require('gulp-uncss');
 
 var jade = require('gulp-jade');
 var rename = require('gulp-rename');
@@ -42,16 +42,31 @@ var babelify = require('babelify');
 var notify = require('gulp-notify');
 
 
+// Blog Builder
+var Metalsmith = require('metalsmith');
+var gulpsmith = require ('gulpsmith');
+var collections = require ('metalsmith-collections');
+var markdown = require ('metalsmith-markdownit');
+var permalinks = require ('metalsmith-permalinks');
+var layout = require ('metalsmith-layouts');
+var inPlace = require ('metalsmith-in-place');
+var gulp_front_matter = require('gulp-front-matter');
+var assign = require('lodash.assign');
+var excerpts = require('metalsmith-excerpts');
+
+
 
 
 // Main GULP TASK
 
 // Development
-gulp.task('default',['jade','css','browserify','watchify','browser-sync'], function(){
-  gulp.watch('./pages/*.jade',['jade']);
-  gulp.watch('./pages/**/*.jade',['jade']);
+gulp.task('default',['css','browserify','watchify','metalsmith','browser-sync'], function(){
+  //gulp.watch('./pages/*.jade',['jade']);
+  //gulp.watch('./pages/**/*.jade',['jade']);
   gulp.watch('./index.css',['css']);
   gulp.watch('./**/*.css',['css']);
+  gulp.watch('pages/**/*',['metalsmith']);
+  gulp.watch('src/**/*',['metalsmith']);
 });
 
 // Build
@@ -94,6 +109,7 @@ gulp.task('css', function(){
   .pipe(reload({stream: true}));
 });
 
+
 // UNCSS TASK
 gulp.task('uncss', function(){
   return gulp.src('./build/index.css')
@@ -110,7 +126,6 @@ gulp.task('uncss', function(){
 });
 
 
-
 // Browserify
 gulp.task('browserify', function() {
     return browserify({
@@ -123,6 +138,7 @@ gulp.task('browserify', function() {
         .pipe(buffer())
         .pipe(gulp.dest('./build'));
 });
+
 
 // Watchify
 gulp.task('watchify', function() {
@@ -143,8 +159,6 @@ gulp.task('watchify', function() {
 });
 
 
-
-
 // Function Browser-sync reload
 gulp.task('browser-sync', function() {
     browserSync({
@@ -152,4 +166,50 @@ gulp.task('browser-sync', function() {
             baseDir: './build/'
         }
     });
+});
+
+// Function Blog Builder
+
+gulp.task('metalsmith', function() {
+  return gulp.src('./src/**/*')
+    //.pipe(plumber())
+    //.pipe(newer('./src/content/**/*'))
+    .pipe(gulp_front_matter()).on("data", function(file) {
+      assign(file, file.frontMatter);
+      delete file.frontMatter;
+    })
+    .pipe(
+      gulpsmith()
+        .metadata({site_name: "My Site"})
+        .use(collections({
+          blogs: {
+            pattern: 'blogs/*.md',
+            sortBy: 'date',
+            reverse: true
+          },
+          pages:{
+            pattern: 'pages/*.md'
+          }
+        }))
+        .metadata({
+          site_name: "My Site",
+          site_URL: "www.indrapratama.com"
+          })
+        .use(markdown({
+          'typographer': true,
+          'html': true
+        }))
+        .use(excerpts())
+        .use(permalinks({
+          pattern: ':collection/:title'
+        }))
+
+        .use(layout({
+          engine: 'jade',
+          pretty: true,
+          directory: './pages'
+        }))
+      )
+    .pipe(gulp.dest('./build'))
+    .pipe(reload({stream:true}));
 });
