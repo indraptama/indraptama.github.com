@@ -1,0 +1,67 @@
+:root {
+  --Grid-font-size: 1rem;
+  --Grid-gutter-size: 20px;
+}
+
+/* Grid */
+.GridFlex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.GridFlex--flexCells > GridFlex-cell {
+  display: flex;
+}
+
+.GridFlex--top {
+  align-items: flex-start;
+}
+
+.GridFlex--bottom {
+  align-items: flex-end;
+}
+
+.GridFlex--center {
+  align-items: center;
+}
+
+.GridFlex--justifyCenter {
+  justify-content: center;
+}
+
+.GridFlex-cell--top {
+  align-self: flex-start;
+}
+
+.GridFlex-cell--bottom {
+  align-self: flex-end;
+}
+
+.GridFlex-cell--center {
+  align-self: center;
+}
+
+.GridFlex-cell--autoSize {
+  flex: none;
+}
+
+.GridFlex--fit > .GridFlex-cell {
+  flex: 1;
+}
+
+.GridFlex--withGutter {
+  margin-top: calc(var(--Grid-gutter-size)*-1);
+  margin-right: 0;
+  margin-bottom: var(--Grid-gutter-size);
+  margin-left: calc(var(--Grid-gutter-size)*-1);
+}
+.GridFlex--withGutter > GridFlex-cell {
+  padding-top: var(--Grid-gutter-size);
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: var(--Grid-gutter-size);
+}

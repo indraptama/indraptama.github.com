@@ -1,0 +1,53 @@
+extends views/default.jade
+block content
+  main
+    article.Container
+      h2 Heading
+      .div
+        h6.subTitle Heading Size
+        h1.giga This is Giga
+        h1.mega This is Mega
+        h1 This is heading 1 or Kilo
+        h2 This is heading 2 or Alpha
+        h3 This is heading 3 or Beta
+        h4 This is heading 4 or Gamma
+        h5 This is heading 5 or Delta
+        h6 This is heading 6 or Epsilon
+      .div
+        h6.subTitle Paragraph
+        p SOUTH AFRICAN model Candice Swanepoel and Namibian model Behati Prinsloo have both expressed their disgust towards a Minnesota dentist who has admitted killing one of their home continent's most beloved animals. Cecil the lion - who was the star attraction for tourists visiting the Hwange National Park, in Zimbabwe bringing thousands of pounds of revenue to the local area - was killed last week by Walter Palmer, an American who visits Africa regularly to hunt big game.
+      .div
+        h6.subTitle Paragraph with <i>lede</i> class
+        p.lede Candice Swanepoel and Behati Prinsloo following the 2014 Victoria's Secret show in London
+      .div
+        h6.subTitle List Modifer
+        p List Lined
+        ul.list--lined
+          li List 1
+          li List 2
+          li List 3
+          li List 4
+      .div
+        h6.subTitle Media Object
+        .Grid-flex.Grid-flex--withGutter
+          .Grid-flex-cell.u-lg-size1of2
+            h6 .Media
+            .Media
+              .Media-figure
+                img(src="img/kitten.jpg", alt="")
+              .Media-body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolorum facilis eligendi accusantium molestiae, repudiandae, velit. Vero necessitatibus modi, ratione! Sint consequuntur dicta dignissimos, modi pariatur repudiandae vitae, ratione animi.
+          .Grid-flex-cell.u-lg-size1of2
+            h6 .Media--reverse
+            .Media.Media--reverse
+              .Media-figure
+                img(src="img/kitten.jpg", alt="")
+              .Media-body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolorum facilis eligendi accusantium molestiae, repudiandae, velit. Vero necessitatibus modi, ratione! Sint consequuntur dicta dignissimos, modi pariatur repudiandae vitae, ratione animi.
+          .Grid-flex-cell.u-lg-size1of2
+            h6 .Media--lg-toBlock
+            .Media.Media--lg-toBlock
+              .Media-figure
+                img(src="img/kitten.jpg", alt="")
+              .Media-body
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolorum facilis eligendi accusantium molestiae, repudiandae, velit. Vero necessitatibus modi, ratione! Sint consequuntur dicta dignissimos, modi pariatur repudiandae vitae, ratione animi.
