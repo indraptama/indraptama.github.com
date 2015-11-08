@@ -47,6 +47,8 @@ media objek
 
 @import "./css/utils-whitespace.css";
 
+@import "./css/theme-sidebar.css";
+@import "./css/theme-hamburger.css";
 @import "./css/theme.css";
 
 /* Variables */
@@ -100,25 +102,3 @@ media objek
 @custom-media --md-viewport (min-width:640px) and (max-width:960px);
 @custom-media --lg-viewport (min-width:960px);
 @custom-media --xl-viewport (min-width:1280px);
-
-
-
-.test {
-  font-size: var(--type-ratio);
-}
-
-.subTitle {
-  border-bottom: 1px solid #ccc;
-  padding-top: var(--base-spacing-unit);
-  padding-bottom: calc(var(--base-spacing-unit)/2);
-  margin-bottom: calc(var(--base-spacing-unit)/2);
-  color: #888;
-}
-
-.u-fontBold {
-  font-weight: 800;
-}
-
-.img-resv {
-  max-width: 100%;
-}

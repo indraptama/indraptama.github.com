@@ -6,13 +6,47 @@
     <title></title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"/><!-- <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Lato:400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/><link href='https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400,900,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="js/responsiveslides.css"/>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body><!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <header class="Main-Header"></header>
+    <header class="Main-Header">
+      <h1 class="Main-Title">Hallo</h1>
+      <button href="http://" target="_blank" class="c-hamburger c-hamburger--htx"><span></span></button>
+    </header>
+    <aside class="SideLeft">
+      <div class="SideLeft-layer1">
+        <div class="Grid Grid--alignMiddle fullheight"><a id="leftSideButton" class="Button Button--aside Button--asideLeft">Menu</a></div>
+      </div>
+      <div class="SideLeft-layer2">
+        <div class="Grid Grid--alignMiddle fullheight">
+          <div class="Container Container--medium">
+            <nav class="Main-Nav Grid Grid--vertical"><a href="home.html" class="u-linkClean">Front page</a><a href="home.html" class="u-linkClean">Portfolio</a><a href="home.html" class="u-linkClean">Gallery</a><a href="home.html" class="u-linkClean">Contact</a></nav>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside class="SideRight">
+      <div class="SideRight-layer1">
+        <div class="Grid Grid--alignMiddle fullheight"><a id="rightSideButton" class="Button Button--aside Button--asideRight u-textNoWrap">About</a></div>
+      </div>
+      <div class="SideRight-layer2">
+        <div class="Grid Grid--alignMiddle fullheight">
+          <div class="Container Container--medium">
+            <div class="Grid Grid--withGutter">
+              <div class="Grid-cell u-lg-size1of2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="Grid-cell u-lg-size1of2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
     <main>
       <article class="Container">
         <h2>Heading</h2>
@@ -79,7 +113,7 @@
         </div>
       </article>
     </main>
-    <!--include footer.jade-->
+    <footer class="Main-Footer"></footer>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/responsiveslides.js"></script>
     <script src="js/salvattore.js"></script>
