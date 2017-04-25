@@ -61,7 +61,7 @@ main {
 
 .HeroContent {
   @media (min-width: 60em) {
-    bottom: 10%;
+    top: 50%;
     left: 0;
     transform-style: preserve-3d;
     transform: translateZ(20px);

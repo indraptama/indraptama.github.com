@@ -169,7 +169,7 @@ main {
 
 @media (min-width: 60em) {
   .HeroContent {
-    bottom: 10%;
+    top: 50%;
     left: 0;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
