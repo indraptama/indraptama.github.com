@@ -1,0 +1,19 @@
+extends src/pug/_default.pug
+
+block content
+  section.Hero.flexs.flex-wrap.mnh-100vh.mnh-auto-l
+    .mw8.center.relative
+      .flex.flex-column.db-l.justify-end.mnh-100vh.mnh-auto-l.pl-1of6-l
+        .HeroImg.bg-red.absolute.center.relative-l.absolute-fill.cover
+          .aspect-ratio.aspect-ratio--16x9
+            .aspect-ratio-content
+        .HeroContent.measure-wide.center.mb0-l.self-end.z-1.absolute-l
+          .HeroContainer.pa4.pa0-l
+            .white
+              h1.f3.f-headline-l.lh-title.fw7.tracked-tight.mb0 Sampurasun.
+                span.db.f5.f3-l.tracked-tight Nepangkeun, abdi Indra Pratama
+              p.i.lh-solid.mb0 Designer & Typographic Lover from Bandung Indonesia
+  section.pa4
+    .measure.lh-copy.center
+      h1 Hallo
+      p My Name is Indra Pratama, I`m freelance designer based in Bandung, Indonesia.

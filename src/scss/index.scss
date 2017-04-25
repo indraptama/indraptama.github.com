@@ -1,0 +1,69 @@
+// Mini Variables
+$color-primary: #FBC02D;
+
+@import "_reset.scss";
+@import "_pagegrid.scss";
+@import "_button.scss";
+
+
+
+html {
+  font-family: 'Cormorant Garamond', 'Garamond', 'Linux Libertine', serif;
+  font-weight: 500;
+  font-size: 100%;
+  color: rgba(#000,.85);
+  background-color: #f8f8f8;
+}
+
+
+body {
+  font-size: 115%;
+
+  @media (min-width: 60em) {
+    font-size: 150%;
+  }
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6,b {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+}
+
+
+.mnh-100vh {
+  min-height: 100vh;
+}
+
+@media (min-width: 60em) {
+  .mnh-auto-l {
+    min-height: auto;
+  }
+}
+
+main {
+  z-index: 2
+}
+
+.absolute-fill {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.HeroContent {
+  @media (min-width: 60em) {
+    bottom: 10%;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+  }
+}
