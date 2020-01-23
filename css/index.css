@@ -1,5 +1,5 @@
 body {
-  background-color: #ccc;
+  background-color: #fff;
   font-family: serif;
   font-size: 0.75rem;
   display: -webkit-box;
@@ -11,13 +11,18 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 .Hero {
-  max-width: 48rem; }
-  .Hero h1 {
-    margin-bottom: 0;
-    line-height: 0; }
+  max-width: 48rem;
+}
+
+.Hero h1 {
+  margin-bottom: 0;
+  line-height: 0;
+}
 
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
