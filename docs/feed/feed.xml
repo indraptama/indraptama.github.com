@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Indra Pratama Putra</title>
+	<subtitle>Saya Indra Pratama. Orang yang jatuh ke dunia kenotariatan.</subtitle>
+	
+	<link href="https://indrapratama.com/feed/feed.xml" rel="self"/>
+	<link href="https://indrapratama.com/"/>
+	<updated>2020-08-07T17:00:00+07:00</updated>
+	<id>https://indrapratama.com/</id>
+	<author>
+		<name>Indra Pratama Putra</name>
+		<email>higenekomanju@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>Cerita dari website ini</title>
+		<link href="https://indrapratama.com/jurnal/cerita-dari-website-ini/"/>
+		<updated>2020-08-07T17:00:00+07:00</updated>
+		<id>https://indrapratama.com/jurnal/cerita-dari-website-ini/</id>
+		<content type="html">&lt;p&gt;Sudah hampir lima tahun domain &lt;a href=&quot;http://indrapratama.com/&quot;&gt;indrapratama.com&lt;/a&gt; ini saya daftarkan. Namun, sampai saat ini website-nya belum juga bisa online karena bebearapa hal. Diantaranya banyaknya perkejaan atau alasan klise &amp;quot;Gak Ada Waktu&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Teknologi membangun website kian hari makin canggih. Waktu pertama kali saya tertarik membangun website sekitar 15 tahun lalu ketika masih menjadi mahasiswa. Wordpress, Joomla, PHP adalah buku awal yang saya beli untuk membangun sebuah website. Tapi suatu kesalahan jika belajar dimulai dari itu semua, karena semua harus dimulai dari bahasa resmi website yaitu HTML. (Akhirnya pusing sendiri)&lt;/p&gt;
+&lt;p&gt;Website yang ingin saya buat, kira-kira seperti ini :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Hostingnya pengen Gratis (Gak mau modal :D)&lt;/li&gt;
+&lt;li&gt;Designnya Simple yang penting enak dibaca di semua device&lt;/li&gt;
+&lt;li&gt;Ga lemot&lt;/li&gt;
+&lt;li&gt;Kalo bisa SPA (Single Page Application)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Akhirnya setelah keliling-keliling baca artikel lalu trial end error, ini tools yang saya gunakan untuk membuat website ini :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.prepros.io/&quot;&gt;Prepros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.github.com/&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;prepros&quot;&gt;Prepros &lt;a class=&quot;direct-link&quot; href=&quot;#prepros&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Saat ini Node.JS adalah salah satu tools wajib yang dibutuhkan oleh frontend developer. Livereloading, autoprefix css, auto minify dan masih banyak fitur lain yang sangat membantu developer. Saya sudah lama menggunakan Node.JS and really love it. Tapi, hal yang saya kurang suka dari NodeJS adalah harus download Repository setiap memulai project baru. Untuk sekedar membuat website yang simple seperti web-saya ini, saya menggunakan Prepros.&lt;/p&gt;
+&lt;p&gt;Prepros adalah favorit saya dalam membuat website yang tidak terlalu rumit. Prepros juga menggunakan NodeJS sebagai base-nya, tapi dengan prepros, saya tidak perlu repot download repository atau setup project. Cukup drag folder project saya, dan Prepros sudah memproses SCSS, JS, HTML, Pug dan lainnya.&lt;/p&gt;
+&lt;h3 id=&quot;11ty-(eleventy)-static-website-generator&quot;&gt;11ty (Eleventy) Static Website Generator &lt;a class=&quot;direct-link&quot; href=&quot;#11ty-(eleventy)-static-website-generator&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Saya memilih github pages sebagai hosting website. It`s free and fast, tapi github pages hanya bisa static website jadi tidak bisa hosting CMS seperti wordpress. Biar ga ribet coding untuk setiap kali post.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Materai dan Sah-nya Perjanjian</title>
+		<link href="https://indrapratama.com/artikel/materai-dan-sahnya-perjanjian/"/>
+		<updated>2012-07-11T17:00:00+07:00</updated>
+		<id>https://indrapratama.com/artikel/materai-dan-sahnya-perjanjian/</id>
+		<content type="html">&lt;p&gt;Beberapa waktu (sudah cukup lama) lalu saya melihat sebuat tayangan berita tentang praktek jual beli anak. Dalam liputan si yang membeli anak tersebut memperlihatkan perjanjian jual beli anak yang dilakukan diatas materai, dan saya juga pernah membaca artikel di internet tentang siswa yang akan masuk SMA di Bandung, wajib menandatangani surat pernyataan bukan anggota gangster diatas materai.&lt;/p&gt;
+&lt;p&gt;Dalam masyarakat terdapat anggapan bahwa sah atau tidaknya suatu perjanjian itu ditentukan oleh apakah perjanjian tersebut ditandatangani di atas materai atau tidak. Sebenarnya apakah fungsi materai itu ? apakah perjanjian atau surat pernyataan yang tidak ditandatangani diatas materai itu tidak sah ?&lt;/p&gt;
+&lt;p&gt;Materai adalah istilah yang lazim di gunakan oleh masyarakat, istilah lengkapnya adalah BEA MATERAI. kata “BEA” berarti pajak tidak langsung, jadi materai adalah pajak tidak langsung yang dikenakan terhadap suatu dokumen baik itu perjanjian atau dokumen-dokumen lain. dengan menempelkan materai diatas perjanjian, artinya para pihak yang melaksanakan perjanjian tersebut telah membayar pajak atas pembuatan dokumen perjanjian yang ditanda-tanganinya.&lt;/p&gt;
+&lt;p&gt;Dokumen yang dikenakan bea materai antara lain (lengkapnya bisa lihat PP no.24 tahun 2000) :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Surat perjanjian, surat pernyataan dan surat yang dibuat untuk tujuan pembuktian&lt;/li&gt;
+&lt;li&gt;Akta Notaris dan Akta PPAT&lt;/li&gt;
+&lt;li&gt;Surat yang memuat jumlah uang&lt;/li&gt;
+&lt;li&gt;Surat berharga&lt;/li&gt;
+&lt;li&gt;dokumen yang digunakan sebagai alat pembuktian di pengadilan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jadi bea materai adalah pembayaran pajak atas dokumen, tidak ada hubungannya dengan sah atau tidaknya suatu perjanjian.&lt;/p&gt;
+&lt;h3 id=&quot;syarat-sah-nya-perjanjian&quot;&gt;Syarat Sah-nya Perjanjian &lt;a class=&quot;direct-link&quot; href=&quot;#syarat-sah-nya-perjanjian&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hal-hal yang menyebabkan batal / tidak sahnya suatu perjanjian adalah apabila perjanjian itu melanggar pasal 1320 KUHPerdata. Yaitu :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sepakat (yang melakukan perjanjian tidak dalam tekanan)&lt;/li&gt;
+&lt;li&gt;Cakap (yang melakukan perjanjian cukup umur / 18 tahun)&lt;/li&gt;
+&lt;li&gt;Suatu hal tertentu (yang diperjanjikan harus jelas) dan&lt;/li&gt;
+&lt;li&gt;Suatu sebab yang halal (yang diperjanjikan tidak melanggar undang-undang)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jika kita hubungkan dengan contoh diawal maka perjanjian jual beli anak meskipun dilaksanakan diatas materai tetap tidak sah karena jual beli anak sendiri dilarang oleh undang-undang. Sedangkan surat pernyataan bukan anggota gangster yang wajib ditanda-tangani siswa yang akan masuk SMA dapat dibatalkan oleh pengadilan karena siswa yang menandatangani masih dibawah umur (asusmsi rata-rata siswa yang akan masuk SMA berusia 15-16 tahun), seharusnya adalah surat pernyataan dari orang tua/ wali siswa tersebut yang menyatakan bahwa anaknya bukan anggota gangster. (karena anak dibawah umur masih dalam tanggungjawab orang tuanya)&lt;/p&gt;
+&lt;p&gt;Suatu perjanjian tetap sah walaupun tidak ditandatangani diatas materai, asalkan tidak melanggar ketentuan pasal 1320 KUHPerdata. Namun, jika dokumen perjanjian yang dilaksanakan tanpa materai tersebut akan dijadikan sebagai alat bukti, maka harus membayar/melunasi materai yang tidak dibayar di kantorpos dengan membayar denda 200% dari bea materai.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,33 @@
+.MainFooter {
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 0 ($baseLineHeight * 1rem);
+  border-top: 1px solid rgba(#000, 0.1);
+}
+
+.FooterNav {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(#222, 1);
+    margin: 0 ($baseLineHeight * 0.5rem);
+
+    &:hover {
+      color: rgba(#222, 0.5);
+    }
+  }
+
+  a:first-child {
+    margin-left: 0;
+  }
+  a:last-child {
+    margin-right: 0;
+  }
+}
