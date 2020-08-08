@@ -31,4 +31,4 @@ Prepros adalah favorit saya dalam membuat website yang tidak terlalu rumit. Prep
 
 ### 11ty (Eleventy) Static Website Generator
 
-Saya memilih github pages sebagai hosting website. It`s free and fast, tapi github pages hanya bisa static website jadi tidak bisa hosting CMS seperti wordpress. Biar ga ribet coding untuk setiap kali post.
+Saya memilih github pages sebagai hosting website. It`s free and fast, tapi github pages hanya bisa static website jadi tidak bisa hosting CMS seperti wordpress. Biar tidak repot coding untuk setiap kali post, saya memilih 11ty sebagai static generator.
