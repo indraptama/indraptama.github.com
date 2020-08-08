@@ -1,0 +1,15 @@
+---
+layout: layouts/home.njk
+---
+
+{% set postslist = collections.posts | head(-5) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+
+<div class="NavCategoryBottom">
+  <p>Selengkapnya : <a href="{{ '/jurnal/' | url }}">Jurnal</a>, <a href="{{ '/artikel/' | url }}">Artikel</a>, <a href="{{ '/info/' | url }}">info</a></p>
+</div>
+
+{# eleventyNavigation:
+  key: Home
+  order: 1 #}

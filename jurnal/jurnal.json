@@ -1,0 +1,4 @@
+{
+  "tags": ["jurnal", "posts"],
+  "layout": "layouts/post.njk"
+}

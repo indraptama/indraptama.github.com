@@ -1,0 +1,44 @@
+.MainHeader {
+  display: flex;
+  padding-left: $baseLineHeight * 1rem;
+  padding-right: $baseLineHeight * 1rem;
+  height: 80px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(#000000, 0.1);
+
+  @media screen and (min-width: 960px) {
+    border-bottom: none;
+  }
+}
+
+.MainHeaderLogo {
+  width: 48px;
+  height: 48px;
+}
+
+.MainHeaderMenu {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    margin: $baseLineHeight * 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: rgba(#333, 1);
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .active {
+    color: rgba(#333, 0.4);
+  }
+}

@@ -1,0 +1,38 @@
+<ol reversed class="mt-0 postlist ArticleList" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in postslist | reverse %}
+  <li class="mt-0 ArticleListItem {% if post.url == url %} postlist-item-active{% endif %}">
+     {% if post.data.featured_img %}
+        <div class="ArticleListItem__img">
+          <div class="outer">
+              <a class="inner" href="{{ post.url | url }}" style="background-image: url({{ post.data.featured_img | safe }})">
+                {# <img src="{{ post.data.featured_img | safe }}"> #}
+              </a>         
+          </div>
+        </div>
+      
+      {% endif %}
+
+      <div class="ArticleListItem__content">
+      <a href="{{ post.url | url }}" class="postlist-link link-no-style">
+        {% if post.data.title %}
+          <h2 class="gamma mt-0 ArticleListItem__title">{{ post.data.title }}</h2>
+        {% else %}
+          <code>{{ post.url }}</code>
+        {% endif %}
+      </a>
+      <div class="zeta">
+        <time datetime="{{ post.date | htmlDateString }}">
+          {{ post.date | readableDate }}
+        </time> in 
+        {% for tag in post.data.tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <span><a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a></span>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+      <div class="excerpt mt-0">{% excerpt post %}</div>
+     </div>
+  </li>
+{% endfor %}
+</ol>

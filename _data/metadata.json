@@ -1,0 +1,20 @@
+{
+  "title": "Indra Pratama Putra",
+  "url": "https://indrapratama.com/",
+  "description": "Saya Indra Pratama. Orang yang jatuh ke dunia kenotariatan.",
+  "feed": {
+    "subtitle": "Saya Indra Pratama. Orang yang jatuh ke dunia kenotariatan.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://indrapratama.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://indrapratama.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Indra Pratama Putra",
+    "email": "higenekomanju@gmail.com",
+    "url": "https://indrapratama.com/about-me/"
+  }
+}
