@@ -114,3 +114,25 @@
     padding-right: 0;
   }
 }
+
+.Article__title {
+  @media (max-width: 768px) {
+    font-size: 1.25 * $scale * 1rem;
+    line-height: 1.2;
+  }
+}
+
+.Hero {
+  max-width: 50em;
+  padding-left: $leading;
+  padding-right: $leading;
+  padding-bottom: $leading;
+  margin: $leading auto 0;
+  border-bottom: 1px solid rgba(#000, 0.1);
+
+  @media (min-width: 960px) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: $leading;
+  }
+}
