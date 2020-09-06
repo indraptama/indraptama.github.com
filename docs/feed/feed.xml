@@ -70,26 +70,37 @@ Senang rasanya bisa mengambil hasil print tanpa harus berdiri dari kursi. Menikm
 		<link href="https://indrapratama.com/blogs/cerita-dari-website-ini/"/>
 		<updated>2020-08-07T17:00:00+07:00</updated>
 		<id>https://indrapratama.com/blogs/cerita-dari-website-ini/</id>
-		<content type="html">&lt;p&gt;Sudah hampir lima tahun domain &lt;a href=&quot;http://indrapratama.com/&quot;&gt;indrapratama.com&lt;/a&gt; ini saya daftarkan. Namun, sampai saat ini website-nya belum juga bisa online karena bebearapa hal. Diantaranya banyaknya perkejaan atau alasan klise &amp;quot;Gak Ada Waktu&amp;quot;.&lt;/p&gt;
-&lt;p&gt;Teknologi membangun website kian hari makin canggih. Waktu pertama kali saya tertarik membangun website sekitar 15 tahun lalu ketika masih menjadi mahasiswa. Wordpress, Joomla, PHP adalah buku awal yang saya beli untuk membangun sebuah website. Tapi suatu kesalahan jika belajar dimulai dari itu semua, karena semua harus dimulai dari bahasa resmi website yaitu HTML. (Akhirnya pusing sendiri)&lt;/p&gt;
+		<content type="html">&lt;p&gt;Sudah hampir lima tahun domain &lt;a href=&quot;http://indrapratama.com/&quot;&gt;indrapratama.com&lt;/a&gt; ini saya daftarkan. Namun, sampai saat ini website-nya belum juga bisa online karena bebearapa hal. Diantaranya banyaknya perkerjaan atau alasan klise &amp;quot;Gak Ada Waktu&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Saya teringat ketika pertama kali saya tertarik membuat website sekitar 15 tahun lalu. Saat itu internet masih terbatas dan saya sama sekali tidak ikut kursus ataupun sekolah IT. Saya langsung belajar Wordpress, Joomla, PHP, MySQL dengan membeli buku dan belajar secara otodidak.&lt;/p&gt;
+&lt;p&gt;Tapi adalah suatu kesalahan jika belajar dimulai dari itu semua. Terlalu banyak code dan programming language yang harus digunakan. Pada akhirnya saya jadi pusing sendiri :confused: dan give Up. Seharusnya saya memulai dari basic yaitu belajar HTML, CSS dan Javascript.&lt;/p&gt;
 &lt;p&gt;Website yang ingin saya buat, kira-kira seperti ini :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Hostingnya pengen Gratis (Gak mau modal :D)&lt;/li&gt;
-&lt;li&gt;Designnya Simple yang penting enak dibaca di semua device&lt;/li&gt;
+&lt;li&gt;Hostingnya pengen Gratis (Gak mau modal :smile:)&lt;/li&gt;
+&lt;li&gt;Designnya Simple, yang penting enak dibaca di semua device&lt;/li&gt;
 &lt;li&gt;Ga lemot&lt;/li&gt;
 &lt;li&gt;Kalo bisa SPA (Single Page Application)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Akhirnya setelah keliling-keliling baca artikel lalu trial end error, ini tools yang saya gunakan untuk membuat website ini :&lt;/p&gt;
+&lt;p&gt;Akhirnya setelah keliling-keliling baca artikel, ini tools yang saya gunakan untuk membuat website ini :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.prepros.io/&quot;&gt;Prepros&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.github.com/&quot;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.github.com/&quot;&gt;Github Pages&lt;/a&gt; untuk hosting-nya.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;, Untuk static generator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.prepros.io/&quot;&gt;Prepros&lt;/a&gt;, untuk proces CSS dan Javascript.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;prepros&quot;&gt;Prepros &lt;a class=&quot;direct-link&quot; href=&quot;#prepros&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Saat ini Node.JS adalah salah satu tools wajib yang dibutuhkan oleh frontend developer. Livereloading, autoprefix css, auto minify dan masih banyak fitur lain yang sangat membantu developer. Saya sudah lama menggunakan Node.JS and really love it. Tapi, hal yang saya kurang suka dari NodeJS adalah harus download Repository setiap memulai project baru. Untuk sekedar membuat website yang simple seperti web-saya ini, saya menggunakan Prepros.&lt;/p&gt;
-&lt;p&gt;Prepros adalah favorit saya dalam membuat website yang tidak terlalu rumit. Prepros juga menggunakan NodeJS sebagai base-nya, tapi dengan prepros, saya tidak perlu repot download repository atau setup project. Cukup drag folder project saya, dan Prepros sudah memproses SCSS, JS, HTML, Pug dan lainnya.&lt;/p&gt;
+&lt;h3 id=&quot;github-pages&quot;&gt;Github Pages &lt;a class=&quot;direct-link&quot; href=&quot;#github-pages&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Saya memilih Github Pages untuk hosting website saya. It`s free, fast and have enough bandwith for hosting small site like this. Tapi Github Pages hanya bisa hosting static website, tidak bisa hosting CMS seperti Wordpress, Drupal, atau CMS lain yang membutuhkan database.&lt;/p&gt;
 &lt;h3 id=&quot;11ty-(eleventy)-static-website-generator&quot;&gt;11ty (Eleventy) Static Website Generator &lt;a class=&quot;direct-link&quot; href=&quot;#11ty-(eleventy)-static-website-generator&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Saya memilih github pages sebagai hosting website. It`s free and fast, tapi github pages hanya bisa static website jadi tidak bisa hosting CMS seperti wordpress. Biar tidak repot coding untuk setiap kali post, saya memilih 11ty sebagai static generator.&lt;/p&gt;
+&lt;p&gt;Biar tidak repot coding untuk setiap kali saya akan posting, saya membutuhkan Static Website Generator. Fungsi utama dari Static Website Generator adalah meng-convert file Markdown (.md) yang biasa saya gunakan untuk menulis content menjadi HTML yang bisa dibuka oleh browser.&lt;/p&gt;
+&lt;p&gt;Terdapat banyak sekali jenis dari Static Website Generator. Ada Jekyll, Gatsby, Next.Js, Hugo dan masih banyak lagi^[lihat di &lt;a href=&quot;http://www.staticgen.com/&quot;&gt;www.staticgen.com&lt;/a&gt;]. Tapi karena saya menginginkan yang simple and easy, saya memilih 11th(Eleventy). Bagaimana cara setup-nya akan saya posting lengkap nanti.&lt;/p&gt;
+&lt;h3 id=&quot;prepros&quot;&gt;Prepros &lt;a class=&quot;direct-link&quot; href=&quot;#prepros&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Saat ini Node.JS adalah salah satu tools wajib yang dibutuhkan oleh frontend developer. Livereloading, autoprefix css, auto minify dan masih banyak fitur lain yang sangat membantu developer. Saya sudah lama menggunakan Node.JS and really love it. Tapi, hal yang saya kurang suka dari NodeJS adalah harus download Repository setiap memulai project baru.&lt;/p&gt;
+&lt;p&gt;Untuk sekedar membuat website yang simple seperti web-saya ini, saya menggunakan Prepros. Tools adalah favorit saya dalam membuat website yang tidak terlalu rumit. Prepros juga menggunakan NodeJS sebagai base-nya, tapi dengan prepros, saya tidak perlu repot download repository atau setup project. Cukup drag folder project saya, dan Prepros sudah memproses SCSS, JS, HTML, Pug dan lainnya.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Alhamdulilah&lt;/em&gt;, setelah trial and error akhirnya website pribadi saya bisa berjalan. Walaupun masih belum sempurna seperti yang saya mau, tapi untuk sementara saya rasa sudah cukup. Nanti akan saya update lagi. Saya buat website ini untuk sekedar hobby saja, tapi semoga website saya ini bisa bermanfaat bagi banyak orang.&lt;/p&gt;
 </content>
 	</entry>
 	
