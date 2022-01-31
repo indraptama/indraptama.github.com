@@ -3,17 +3,22 @@ layout: layouts/home.njk
 ---
 
 <div class="Hero">
-  <h1 class="beta Article__title mt-0"><span>Saya Indra Pratama, yang Jatuh ke dunia kenotariatan karena suatu kesengajaan.</span> </h1>
+  <h1 class="beta Article__title mt-0">
+    <span>INDRA PRATAMA PUTRA, S.H, M.Kn</span>
+  </h1>
 </div>
 
-{% set postslist = collections.posts | head(-5) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<div>
 
-<div class="NavCategoryBottom">
-  <p>Selengkapnya : <a href="{{ '/jurnal/' | url }}">Jurnal</a>, <a href="{{ '/blogs/' | url }}">Blogs</a>, <a href="{{ '/about/' | url }}">About</a></p>
+  {% set postslist = collections.posts | head(-5) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postslist.njk" %}
+
+  <div class="NavCategoryBottom">
+    <p>Selengkapnya : <a href="{{ '/jurnal/' | url }}">Jurnal</a>, <a href="{{ '/blogs/' | url }}">Blogs</a>, <a href="{{ '/about/' | url }}">About</a>
+    </p>
+  </div>
 </div>
-
 {# eleventyNavigation:
   key: Home
   order: 1 #}
